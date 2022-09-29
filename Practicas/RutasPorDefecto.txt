@@ -1,0 +1,1 @@
+Consultando en ...\www\proyectoweb22\routes\web.php --> no existen rutas por defecto definidas

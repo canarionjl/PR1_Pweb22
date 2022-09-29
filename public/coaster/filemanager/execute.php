@@ -13,10 +13,10 @@ if (!checkRelativePath($_POST['path'])) {
     exit;
 }
 
-if (isset($_SESSION['RF']['language']) && file_exists('lang/' . basename($_SESSION['RF']['language']) . '.php')) {
+if (isset($_SESSION['RF']['language']) && file_exists('lang/' . basename($_SESSION['RF']['language']) . 'JoseLuisPrivadoBlade.blade.php')) {
     $languages = include 'lang/languages.php';
     if (array_key_exists($_SESSION['RF']['language'], $languages)) {
-        include 'lang/' . basename($_SESSION['RF']['language']) . '.php';
+        include 'lang/' . basename($_SESSION['RF']['language']) . 'JoseLuisPrivadoBlade.blade.php';
     } else {
         response(transfm('Lang_Not_Found') . AddErrorLocation())->send();
         exit;

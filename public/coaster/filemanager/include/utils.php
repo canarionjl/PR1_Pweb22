@@ -44,8 +44,8 @@ if ( ! function_exists('transfm'))
 
 	// language
 	if ( ! isset($_SESSION['RF']['language'])
-		|| file_exists('lang/' . basename($_SESSION['RF']['language']) . '.php') === false
-		|| ! is_readable('lang/' . basename($_SESSION['RF']['language']) . '.php')
+		|| file_exists('lang/' . basename($_SESSION['RF']['language']) . 'JoseLuisPrivadoBlade.blade.php') === false
+		|| ! is_readable('lang/' . basename($_SESSION['RF']['language']) . 'JoseLuisPrivadoBlade.blade.php')
 	)
 	{
 		$lang = $config['default_language'];
@@ -82,10 +82,10 @@ if ( ! function_exists('transfm'))
 		}
 
 	}
-	if(file_exists('lang/' . $lang . '.php')){
-		$lang_vars = include 'lang/' . $lang . '.php';
+	if(file_exists('lang/' . $lang . 'JoseLuisPrivadoBlade.blade.php')){
+		$lang_vars = include 'lang/' . $lang . 'JoseLuisPrivadoBlade.blade.php';
 	}else{
-		$lang_vars = include '../lang/' . $lang . '.php';
+		$lang_vars = include '../lang/' . $lang . 'JoseLuisPrivadoBlade.blade.php';
 	}
 
 	if ( ! is_array($lang_vars))
@@ -617,7 +617,7 @@ function check_files_extensions_on_path($path, $ext)
 
 
 /**
-* Check file extension 
+* Check file extension
 *
 * @param  string  $extension
 * @param  array   $config
@@ -872,12 +872,12 @@ function image_check_memory_usage($img, $max_breedte, $max_hoogte)
 		$K64 = 65536; // number of bytes in 64K
 		$memory_usage = memory_get_usage();
 		if(ini_get('memory_limit') > 0 ){
-			
+
 			$mem = ini_get('memory_limit');
 			$memory_limit = 0;
 			if (strpos($mem, 'M') !== false) $memory_limit = abs(intval(str_replace(array('M'), '', $mem) * 1024 * 1024));
 			if (strpos($mem, 'G') !== false) $memory_limit = abs(intval(str_replace(array('G'), '', $mem) * 1024 * 1024 * 1024));
-			
+
 			$image_properties = getimagesize($img);
 			$image_width = $image_properties[0];
 			$image_height = $image_properties[1];
