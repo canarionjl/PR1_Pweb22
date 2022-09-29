@@ -37,3 +37,4 @@ Route::get('/Alvaro', function() {
 Route::get('/AlvaroPrivado', function() {
     include("../Practicas/AlvaroPrivado.html");
 });
+

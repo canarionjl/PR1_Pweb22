@@ -130,7 +130,8 @@ section .btn {
 
 .carousel .item {
     height: 650px;
-    background: url(../img/banner.jpg) no-repeat center fixed;
+    background: #0066a1 url(../img/banner.jpg) no-repeat center fixed;
+    background-size: contain;
 }
 
 .carousel .col-sm-12 {

@@ -14,7 +14,7 @@
     <div class="carousel-inner" role="listbox">
 @endif
 
-        <div class="item {{ ($count==1)?'active':'' }}" style="background:url('{{ PageBuilder::block('slide_image', ['view' => 'raw']) }}')">
+        <div class="item {{ ($count==1)?'active':'' }}" style="background-image:url('{{ PageBuilder::block('slide_image', ['view' => 'raw']) }}')">
 
             <div class="container">
                 <div class="row">
