@@ -2,9 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>HimarPrivado</title>
+    <style>
+        body{
+            color: white;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 100;
+            background: #292929;
+        }
+        .marquee1{
+            color:white;
+        }
+        .marquee2{
+            border-radius:15px;
+            background-color: #1A649D;
+            font-size: 30px;
+        }
+        table.tabla-presentacion, .tabla-presentacion td{
+            border: 1px solid #636363;
+            border-collapse: collapse;
+            padding: 5px;
+            margin:0 auto;
+        }
+        .botonVer{
+            border: transparent;
+            background: transparent;
+            padding:  0 2px 0 2px;
+            cursor: pointer;
+        }
+        .imagenOjo{
+            padding:  0 0 0 0;
+        }
+        .pass{
+            height: 25px;
+        }
+    </style>
+    <marquee direction="down" width=100% height=50px" behavior="alternate" class="marquee2"
+             scrollamount="10px">
+        <marquee behavior="alternate" class="marquee1" scrollamount="25px">
+            Esta es la página web Privada de Himar</marquee>
+    </marquee>
 </head>
 <body>
 
+<br><br><br><br><br><br><br><br>
+<div class="tabla-padre">
+    <table class="tabla-presentacion">
+        <tr>
+            <td style="text-align: center"><img width=141px height=200px src="/uploads/images/foto.jpg"></td>
+            <td>Grado en Ingeniería en Tecnologías de la Telecomunicación</td>
+        </tr>
+        <tr>
+            <td>Himar Moreno Santana</td>
+            <td>Contraseñas:<br>
+                <ul>
+                    <li class="pass"> Google: <span style="border: 1px solid black; padding: 1px 2px 0 2px">
+                        *******  <button onClick="alerta()" class="botonVer" >
+                        <img class="imagenOjo" width=15px height=15px src="/uploads/images/ojo.png">
+                    </button></span></li>
+                    <li class="pass">Ulpgc:  <span style="border: 1px solid black; padding: 1px 2px 0 2px">
+                        *******  <button onClick="alerta()" class="botonVer">
+                        <img class="imagenOjo" width=15px height=15px src="/uploads/images/ojo.png">
+                    </button></span></li>
+                    <li class="pass">Instagram:  <span style="border: 1px solid black; padding: 1px 2px 0 2px">
+                        *******  <button onClick="alerta()" class="botonVer">
+                        <img class="imagenOjo" width=15px height=15px src="/uploads/images/ojo.png">
+                    </button></span></li>
+                </ul></td>
+        </tr>
+    </table>
+
+</div>
+</h1>
 </body>
 </html>
+<script>
+    function alerta() {
+        alert('No tan rápido, no tienes mucha cara de ser Himar...')
+    }
+</script>
