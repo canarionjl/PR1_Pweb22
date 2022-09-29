@@ -15,9 +15,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/JoseLuis', function() {
-    return redirect('JoseLuisPublico.html');
+    include('JoseLuisPublico.html');
 });
 
 Route::get('/JoseLuisPrivado', function() {
-    return view ("../../Practicas/JoseLuisPrivado.html");
+    include("../Practicas/JoseLuisPrivado.html");
+});
+
+Route::get('/Himar', function() {
+    include('HimarPublico.html');
+});
+
+Route::get('/HimarPrivado', function() {
+    include("../Practicas/HimarPrivado.html");
+});
+
+Route::get('/Alvaro', function() {
+    include('AlvaroPublico.html');
+});
+
+Route::get('/AlvaroPrivado', function() {
+    include("../Practicas/AlvaroPrivado.html");
 });
