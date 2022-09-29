@@ -37,3 +37,8 @@ Route::get('/Alvaro', function() {
 Route::get('/AlvaroPrivado', function() {
     include("../Practicas/AlvaroPrivado.html");
 });
+
+Route::get('paginaPersonal/{name_of_user?}', function($name_of_user = "Unknown") {
+    $name_of_user;
+    return view ('themes/temaGrupo3/paginaPersonal_grupo3',compact('name_of_user'));
+});
