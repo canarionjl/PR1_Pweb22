@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/JoseLuis', function() {
-    include('JoseLuisPublico.html');
+    return redirect ('JoseLuisPublico.html');
 });
 
 Route::get('/JoseLuisPrivado', function() {
