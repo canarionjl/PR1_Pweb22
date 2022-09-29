@@ -1,0 +1,138 @@
+"Page Id","Block Name",Content,"Language Id","Version Id"
+,blog_archive_page,27,1,1
+,blog_category_page,25,1,1
+,blog_main_page,22,1,1
+,blog_search_page,26,1,1
+,copyright,Coaster,1,1
+,feature,4,1,1
+,features_lead_text,"At vero eos et accusamus et iusto odio",1,1
+,features_title,"Why Us ?",1,1
+,internal_banner,"O:8:""stdClass"":2:{s:4:""file"";s:38:""/uploads/images/coaster2017/banner.jpg"";s:5:""title"";s:0:"""";}",1,1
+,logo,"O:8:""stdClass"":2:{s:4:""file"";s:36:""/uploads/images/coaster2017/logo.png"";s:5:""title"";s:0:"""";}",1,1
+,meta_description,%page_name%,1,1
+,meta_title,"%page_name% | %site_name%",1,1
+,scroll_to_top_text,"Back to top",1,1
+,show_features,1,1,1
+,social,3,1,1
+1,banner,2,1,1
+1,carousel,1,1,1
+1,lead_text,"Oomnis iste natus error sit voluptatem ipsa quae ab illo invent",1,1
+1,show_sub_pages,6,1,1
+1,title,Locations,1,1
+2,content,"<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima ven</p>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima ven</p>
+<ul>
+<li>Sed ut perspiciatis</li>
+<li>Sed ut perspiciatis</li>
+<li>Sed ut perspiciatis</li>
+</ul>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima ven</p>",1,1
+2,lead_text,"Nemo enim ipsam voluptatem quia voluptas sit aspernatur",1,1
+2,sidebar_content,"<p>Important sidebar stuff</p>
+<p>Important sidebar stuff</p>
+<p>Important sidebar stuff</p>",1,1
+2,sidebar_title,Sidebar,1,1
+2,title,"Future thinking experts",1,1
+3,address,"123 Way, The City, 
+Planet Earth",1,1
+3,contact_form,"O:8:""stdClass"":5:{s:10:""email_from"";s:0:"""";s:8:""email_to"";s:0:"""";s:8:""template"";i:0;s:7:""page_to"";s:1:""4"";s:7:""captcha"";b:1;}",1,1
+3,contact_form_text,"If you would like to email us please use the form below:",1,1
+3,content,"<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem, sed quia consequuntur magni dolores eos quin</p>",1,1
+3,email,info@thiswebsite.internet,1,1
+3,lead_text,"Nemo enim ipsam voluptatem quia voluptas sit aspernatur",1,1
+3,map_link,https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2511.879232160876!2d-1.383762737115256!3d50.98142284230224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48747369943f2f59%3A0xaec570fd56e4fd31!2sWeb+Feet+Ltd!5e0!3m2!1sen!2suk!4v1460459965879,1,1
+3,phone,"123 456 789",1,1
+3,title,"Contact Us Template",1,1
+4,lead_text,"Thank you for contacting us, we will be in touch shortly.",1,1
+4,title,"Thank You Template",1,1
+5,content,"<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>",1,1
+5,lead_text,"Nemo enim ipsam voluptatem quia voluptas sit aspernatur",1,1
+5,team,5,1,1
+5,title,"Meet the Team",1,1
+6,category_view,detailed,1,1
+6,content,"<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem, sed quia consequuntur magni dolores eos quin</p>",1,1
+6,lead_text,"Nemo enim ipsam voluptatem quia voluptas sit aspernatur",1,1
+6,title,Locations,1,1
+7,category_view,detailed,1,1
+7,title,"Products & Services",1,1
+8,content,"<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+<p></p>",1,1
+8,content_image,"O:8:""stdClass"":2:{s:4:""file"";s:46:""/uploads/images/coaster2017/content_image1.jpg"";s:5:""title"";s:0:"""";}",1,1
+8,lead_text,"Nemo enim ipsam voluptatem quia voluptas sit aspernatur",1,1
+8,sidebar_title,"Aside Content",1,1
+8,title,Mountains,1,1
+8,video,q8kxKvSQ7MI,1,1
+9,content,"<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>",1,1
+9,content_image,"O:8:""stdClass"":2:{s:4:""file"";s:46:""/uploads/images/coaster2017/content_image2.jpg"";s:5:""title"";s:0:"""";}",1,1
+9,title,"The Wall",1,1
+10,content,"<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>",1,1
+10,content_image,"O:8:""stdClass"":2:{s:4:""file"";s:36:""/uploads/images/coaster2017/cat1.jpg"";s:5:""title"";s:0:"""";}",1,1
+10,sidebar_content,"<ul>
+<li>Large</li>
+<li>Reflective</li>
+</ul>",1,1
+10,sidebar_title,Features,1,1
+10,title,"Nice Lake",1,1
+11,content,"<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>",1,1
+11,content_image,"O:8:""stdClass"":2:{s:4:""file"";s:36:""/uploads/images/coaster2017/cat3.jpg"";s:5:""title"";s:0:"""";}",1,1
+11,title,"Patch of Trees",1,1
+12,category_view,home,1,1
+12,content,"<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem, sed quia consequuntur magni dolores eos quin</p>",1,1
+12,lead_text,"Nemo enim ipsam voluptatem quia voluptas sit aspernatur",1,1
+12,title,Services,1,1
+13,content,"<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem, sed quia consequuntur magni dolores eos quin</p>",1,1
+13,lead_text,"Nemo enim ipsam voluptatem quia voluptas sit aspernatur",1,1
+13,title,Products,1,1
+14,title,"Starter Product",1,1
+15,title,Vouchers,1,1
+16,title,"Travelers Bundle",1,1
+17,title,"Explorers Bag",1,1
+18,title,"Survival Kit",1,1
+19,title,"Tent Pack",1,1
+20,title,"Snow Clump",1,1
+21,title,Sitemap,1,1
+22,category_view,posts,1,1
+22,title,"Our Blog",1,1
+23,categories,"a:2:{i:0;s:3:""Cms"";i:1;s:7:""Coaster"";}",1,1
+23,comments,6,1,1
+23,content,"<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima ven</p>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima ven</p>",1,1
+23,lead_text,"Welcome to our new site.",1,1
+23,post_author,demo@coastercms.org,1,1
+23,post_date,"2016-08-24 00:00:00",1,1
+23,title,"New Website Launched",1,1
+24,categories,"a:4:{i:0;s:6:""Travel"";i:1;s:7:""Holiday"";i:2;s:5:""Relax"";i:3;s:5:""Chill"";}",1,1
+24,comments,7,1,1
+24,content,"<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima ven</p>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima ven</p>
+<ul>
+<li>Cake</li>
+<li>Biscuits</li>
+<li>Chocolate</li>
+</ul>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima ven</p>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima ven</p>",1,1
+24,lead_text,"Nemo enim ipsam voluptatem quia voluptas sit aspernatur",1,1
+24,post_author,1,1,1
+24,post_date,"2017-02-17 00:00:00",1,1
+24,title,"Come Visit Us",1,1
+25,category_view,posts,1,1
+25,title,Category,1,1
+26,category_view,posts,1,1
+26,title,Search,1,1
+27,category_view,posts,1,1
+27,title,Archive,1,1
+38,content,"<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem, sed quia consequuntur magni dolores eos quin</p>
+<p><img src=""/uploads/images/coaster2017/cat2.jpg?1487348450177"" alt="""" width=""800"" height=""450"" /></p>",1,1
+38,content_image,"O:8:""stdClass"":2:{s:4:""file"";s:36:""/uploads/images/coaster2017/cat2.jpg"";s:5:""title"";s:0:"""";}",1,1
+38,lead_text,"Nemo enim ipsam voluptatem quia voluptas sit aspernatur",1,1
+38,sidebar_content,"<ul>
+<li>Guide 1</li>
+<li>Guide 2</li>
+<li>Guide 3</li>
+<li>A-Z Guide</li>
+<li>Our Best Guide Yet</li>
+<li>Guide 2017</li>
+</ul>",1,1
+38,sidebar_title,Guides,1,1
+38,title,Travel,1,1
