@@ -37,8 +37,8 @@ body {
 }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
-    background: #e95c4e;
-    border-color: #e95c4e;
+    background: #56d533;
+    border-color: #56d533;
 }
 
 h1, h2, h3, h4 {
@@ -66,7 +66,7 @@ h3:after {
     display: block;
     width: 15px;
     height: 4px;
-    background: #e95c4e;
+    background: #56d533;
     margin: 10px 0 20px 0;
 }
 
@@ -83,7 +83,7 @@ a, button, .fa {
 }
 
 a {
-    color: #e95c4e
+    color: #56d533
 }
 
 a:hover {
@@ -92,7 +92,7 @@ a:hover {
 }
 
 .lead {
-    color: #e95c4e;
+    color: #56d533;
     font-family: 'Passion One', cursive;
     font-weight: 400;
     font-size: 24px;
@@ -104,7 +104,7 @@ hr {
 }
 
 section .btn {
-    border-color: #e95c4e !important;
+    border-color: #56d533 !important;
     padding: 10px 25px;
     color: #213e5b;
 }
@@ -210,7 +210,7 @@ section {
 }
 
 footer {
-    background: url(../img/banner.jpg) no-repeat center fixed;
+    background: url(../../../uploads/images/tilos_moya.jpg) center no-repeat;
     padding: 100px 0;
 }
 
@@ -235,7 +235,7 @@ footer p {
 }
 
 .fa {
-    color: #e95c4e;
+    color: #56d533;
 }
 
 .btn {
@@ -251,9 +251,9 @@ footer p {
 }
 
 .btn:hover {
-    background: #e95c4e !important;
+    background: #56d533 !important;
     color: #fff;
-    border-color: #e95c4e !important;
+    border-color: #56d533 !important;
 }
 
 .btn:hover .fa {
