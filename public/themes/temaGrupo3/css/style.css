@@ -131,6 +131,7 @@ section .btn {
 .carousel .item {
     height: 650px;
     background: white url(../img/banner.jpg) no-repeat center fixed;
+    object-fit: fill;
     opacity:100%;
     background-size: contain;
 }
@@ -142,6 +143,7 @@ section .btn {
     justify-content: center;
     text-align: center;
     height: 650px;
+
 }
 
 .carousel h1, .carousel h2 {
@@ -181,7 +183,7 @@ section {
 }
 
 #sec1 {
-    background: url(../img/bg.jpg) no-repeat center bottom fixed;
+    background: url(../img/bg.jpg) no-repeat center bottom;
 }
 
 #sec1 .fa {
