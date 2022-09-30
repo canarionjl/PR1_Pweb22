@@ -1392,9 +1392,10 @@ img {
     height: auto
 }
 .img-responsive, .thumbnail a > img, .thumbnail > img {
-    display: block;
     height: 200px;
     width: 200px;
+    height:auto;
+    weight:auto;
 }
 
 .img-rounded {
