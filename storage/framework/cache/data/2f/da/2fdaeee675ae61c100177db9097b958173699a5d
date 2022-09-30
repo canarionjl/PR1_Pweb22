@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 1664489473s:13931:"<!DOCTYPE html>
+=======
+1664486596s:13584:"<!DOCTYPE html>
+>>>>>>> 94b17ec7356c847964cd82654fed045a327169f9
 <html lang="en">
 <head itemscope>
     <meta charset="utf-8">
@@ -123,7 +127,11 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
 
+<<<<<<< HEAD
         <div class="item active" style="background-image:url('http://proyectoweb22.test/uploads/images/coaster2017/banner.jpg')">
+=======
+        <div class="item active" style="background:url('http://proyectoweb22.test/uploads/images/coaster2017/banner.jpg')">
+>>>>>>> 94b17ec7356c847964cd82654fed045a327169f9
 
             <div class="container">
                 <div class="row">
@@ -139,7 +147,11 @@
 
         </div>
 
+<<<<<<< HEAD
 <div class="item " style="background-image:url('http://proyectoweb22.test/uploads/images/coaster2017/banner.jpg')">
+=======
+<div class="item " style="background:url('http://proyectoweb22.test/uploads/images/coaster2017/banner.jpg')">
+>>>>>>> 94b17ec7356c847964cd82654fed045a327169f9
 
             <div class="container">
                 <div class="row">
