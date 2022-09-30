@@ -14,7 +14,7 @@
     <div class="carousel-inner" role="listbox">
 <?php endif; ?>
 
-        <div class="item <?php echo e(($count==1)?'active':''); ?>" style="background:url('<?php echo e(PageBuilder::block('slide_image', ['view' => 'raw'])); ?>')">
+        <div class="item <?php echo e(($count==1)?'active':''); ?>" style="background-image:url('<?php echo e(PageBuilder::block('slide_image', ['view' => 'raw'])); ?>')">
 
             <div class="container">
                 <div class="row">
@@ -50,4 +50,5 @@
     <?php endif; ?>
 
 </div>
-<?php endif; ?><?php /**PATH C:\laragon\www\proyectoweb22\resources\views/themes/temaGrupo3/blocks/repeater/carousel.blade.php ENDPATH**/ ?>
+<?php endif; ?>
+<?php /**PATH C:\laragon\www\proyectoweb22\resources\views/themes/temaGrupo3/blocks/repeater/carousel.blade.php ENDPATH**/ ?>
