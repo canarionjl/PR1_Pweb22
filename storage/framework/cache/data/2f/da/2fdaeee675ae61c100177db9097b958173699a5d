@@ -1,4 +1,4 @@
-1664540705s:14008:"<!DOCTYPE html>
+1664545979s:13115:"<!DOCTYPE html>
 <html lang="en">
 <head itemscope>
     <meta charset="utf-8">
@@ -123,15 +123,15 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
 
-        <div class="item active" style="background-image:url('http://proyectoweb22.test/uploads/images/coaster2017/banner.jpg')">
+        <div class="item active" style="background-image:url('http://proyectoweb22.test/uploads/Agricultores_canarios (1) (1).jpg')">
 
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="carwrap">
-                            <h1>This is the Homepage Template</h1>
-                            <p>All text and image blocks can be edited</p>
-                                                            <a href="/about" class="btn btn-default">About Us &nbsp; <i class="fa fa-chevron-circle-right"></i></a>
+                            <h1>¡Conozca a nuestros agricultores!</h1>
+                            <p></p>
+                                                            <a href="/meet-the-team" class="btn btn-default">Conozca más sobre ellos aquí &nbsp; <i class="fa fa-list-alt"></i></a>
                                                     </div>
                     </div>
                 </div>
@@ -139,15 +139,15 @@
 
         </div>
 
-<div class="item " style="background-image:url('http://proyectoweb22.test/uploads/images/coaster2017/banner.jpg')">
+<div class="item " style="background-image:url('http://proyectoweb22.test/uploads/2017-06-22-19-47-06 (1).jpg')">
 
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="carwrap">
-                            <h2>Welcome to Coaster CMS</h2>
-                            <p>Edition 2017</p>
-                                                            <button class="btn btn-default" id="scrollbutton">Take the tour &nbsp; <i class="fa fa-arrow-down"></i></button>
+                            <h2>¡Compre sus productos locales!</h2>
+                            <p>Cultivados en la Villa de Moya directamente para usted</p>
+                                                            <a href="/locations/mountains" class="btn btn-default">Comprar &nbsp; <i class="fa fa-money"></i></a>
                                                     </div>
                     </div>
                 </div>
@@ -255,25 +255,6 @@
             </div>
 </section>
 
-<section class="banners">
-        <div class="container">
-            
-                            <div class="row">
-                                        <div class="col-sm-4">
-                        <a href="/meet-the-team">
-                            <img src="http://proyectoweb22.test/uploads/images/coaster2017/mini-banner.jpg" title="mini-banner" alt="mini-banner" class="img-responsive" >
-                        </a>
-                    </div>
-                    
-            <div class="col-sm-4">
-                        <a href="/about">
-                            <img src="http://proyectoweb22.test/uploads/images/coaster2017/mini-banner.jpg" title="mini-banner" alt="mini-banner" class="img-responsive" >
-                        </a>
-                    </div>
-                                    </div>
-            
-                    </div>
-    </section>
 
 
 <section id="sec2">

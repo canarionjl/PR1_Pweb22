@@ -17,6 +17,6 @@
     </div>
 </section>
 
-{!! PageBuilder::block('banner') !!}
+
 
 {!! PageBuilder::section('footer') !!}

@@ -2,7 +2,7 @@
 body {
     line-height: 1.9em;
     padding: 40px;
-    background: #fafafa;
+    background: lightgreen;
 }
 
 .navbar-inverse {
@@ -130,7 +130,8 @@ section .btn {
 
 .carousel .item {
     height: 650px;
-    background: #0066a1 url(../img/banner.jpg) no-repeat center fixed;
+    background: white url(../img/banner.jpg) no-repeat center fixed;
+    opacity:100%;
     background-size: contain;
 }
 
@@ -145,19 +146,21 @@ section .btn {
 
 .carousel h1, .carousel h2 {
     font-size: 70px;
-    color: #fff;
+    color: #000000;
     margin-top: 60px;
 }
 
 .carousel p {
-    color: #fff;
+    color: black;
+    font-size:22px;
+    font-family: "Trebuchet MS", sans-serif;
 }
 
 .carousel .btn {
     background: none;
-    color: #fff;
+    color: black;
     border-radius: 0;
-    border: 3px solid #fff;
+    border: 3px solid #000000;
     padding: 15px 35px;
 }
 

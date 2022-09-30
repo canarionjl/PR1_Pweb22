@@ -20,7 +20,6 @@
     </div>
 </section>
 
-<?php echo PageBuilder::block('banner'); ?>
 
 
 <?php echo PageBuilder::section('footer'); ?>
