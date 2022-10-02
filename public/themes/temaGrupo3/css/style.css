@@ -210,6 +210,7 @@ section {
 footer {
     background: url(../../../uploads/images/tilos_moya.jpg) center no-repeat;
     padding: 100px 0;
+    background-size: cover;
 }
 
 footer .btn {

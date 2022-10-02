@@ -1,0 +1,51 @@
+"Repeater Id","Repeater Row","Block Name",Content,"Version Id"
+1,1,,2,2
+1,1,slide_button_icon,"<i class=""fa fa-money""></i>",4
+1,1,slide_button_link,"a:2:{s:4:""link"";s:12:""internal://8"";s:6:""target"";s:0:"""";}",4
+1,1,slide_button_text,Comprar,4
+1,1,slide_image,"O:8:""stdClass"":2:{s:4:""file"";s:36:""/uploads/2017-06-22-19-47-06 (1).jpg"";s:5:""title"";s:37:""productos locales de la Villa de Moya"";}",8
+1,1,slide_text,"Cultivados en la Villa de Moya directamente para usted",4
+1,1,slide_title,"¡Compre sus productos locales!",4
+1,2,,1,2
+1,2,slide_button_icon,"<i class=""fa fa-list-alt""></i>",2
+1,2,slide_button_link,"a:2:{s:4:""link"";s:12:""internal://5"";s:6:""target"";s:0:"""";}",2
+1,2,slide_button_text,"Conozca más sobre ellos aquí",2
+1,2,slide_image,"O:8:""stdClass"":2:{s:4:""file"";s:42:""/uploads/Agricultores_canarios (1) (1).jpg"";s:5:""title"";s:31:""Productores de la Villa de Moya"";}",5
+1,2,slide_title,"¡Conozca a nuestros agricultores!",2
+3,1,social_icon,"<i class=""fa fa-facebook-square""></i>",1
+3,1,social_name,Facebook,1
+3,2,social_icon,"<i class=""fa fa-twitter-square""></i>",1
+3,2,social_name,Twitter,1
+3,3,social_icon,"<i class=""fa fa-linkedin-square""></i>",1
+3,3,social_name,LinkedIn,1
+3,4,social_icon,"<i class=""fa fa-youtube""></i>",1
+3,4,social_name,YouTube,1
+4,1,feature_icon,"<i class=""fa fa-wrench fa-2x""></i>",1
+4,1,feature_text,"Vel ad aliquid copiosae, cum id impetus tincidunt, solum option laoreet ei quo. No cum agam appareat vituperata ateum iusto paulo dignissim.",1
+4,1,feature_title,Customisable,1
+4,2,feature_icon,"<i class=""fa fa-desktop fa-2x""></i>",1
+4,2,feature_text,"Vel ad aliquid copiosae, cum id impetus tincidunt, solum option laoreet ei quo. No cum agam appareat vituperata ateum iusto paulo dignissim.",1
+4,2,feature_title,Picturesque,1
+4,3,feature_icon,"<i class=""fa fa-life-ring fa-2x""></i>",1
+4,3,feature_text,"Vel ad aliquid copiosae, cum id impetus tincidunt, solum option laoreet ei quo. No cum agam appareat vituperata ateum iusto paulo dignissim.",1
+4,3,feature_title,"Perfect Support",1
+5,2,,2,2
+5,2,member_image,"O:8:""stdClass"":2:{s:4:""file"";s:17:""/uploads/foto.jpg"";s:5:""title"";s:0:"""";}",7
+5,2,member_name,"Himar Moreno Santana",2
+5,2,member_text,"<a href=""http://proyectoweb22.test/paginaPersonal/Himar"">Ver página personal</a>",16
+5,4,,1,2
+5,4,member_image,"O:8:""stdClass"":2:{s:4:""file"";s:21:""/uploads/IMG_0322.jpg"";s:5:""title"";s:0:"""";}",8
+5,4,member_name,"Jose Luis Benítez Santana",2
+5,4,member_text,"<a href=""http://proyectoweb22.test/paginaPersonal/JoseLuis"">Ver página personal</a>",16
+5,5,,3,2
+5,5,member_name,Alvaro,7
+5,5,member_text,"<a href=""http://proyectoweb22.test/paginaPersonal/Alvaro"">Ver página personal</a>",16
+6,1,comment_author,"John Smith",1
+6,1,comment_content,"Well done!",1
+6,1,comment_date,"2016-08-24 15:11:00",1
+7,1,comment_author,Sally,1
+7,1,comment_content,"Interesting article ....",1
+7,1,comment_date,"2016-08-26 13:11:00",1
+7,2,comment_author,Douglas,1
+7,2,comment_content,Yes,1
+7,2,comment_date,"2016-08-30 10:41:00",1
