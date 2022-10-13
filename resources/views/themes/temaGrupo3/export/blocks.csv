@@ -1,0 +1,61 @@
+"Block Name","Block Label","Block Note","Block Category","Block Type","Global (show in site-wide)","Global (show in pages)",Templates,"Block Order","Block Active"
+meta_title,"Meta Title",,"SEO Content",string,yes,yes,"blog-archives,blog-category,blog-search,blog,category,blog-post,internal,contact,home,team,sitemap",20,1
+meta_description,"Meta Description",,"SEO Content",text,yes,yes,"blog-archives,blog-category,blog-search,blog,category,blog-post,internal,contact,home,team,sitemap",30,1
+meta_keywords,"Meta Keywords",,"SEO Content",text,yes,yes,"blog-archives,blog-category,blog-search,blog,category,blog-post,internal,contact,home,team,sitemap",40,1
+header_html,"Header Html",,Header,text,yes,no,"blog-archives,blog-category,blog-search,blog,category,blog-post,internal,contact,home,team,sitemap",50,1
+logo,Logo,,Header,image,yes,no,"blog-archives,blog-category,blog-search,blog,category,blog-post,internal,contact,home,team,sitemap",60,1
+internal_banner,"Internal Banner",,Banners,image,yes,no,"blog-archives,blog-category,blog-search,blog,category,blog-post,internal,contact,team,sitemap",70,1
+show_features,"Show Features",,Footer,select,yes,no,"blog-archives,blog-category,blog-search,blog,category,blog-post,internal,contact,home,team,sitemap",120,1
+features_title,"Features Title",,Footer,string,yes,no,"blog-archives,blog-category,blog-search,blog,category,blog-post,internal,contact,home,team,sitemap",130,1
+features_lead_text,"Features Lead Text",,Footer,text,yes,no,"blog-archives,blog-category,blog-search,blog,category,blog-post,internal,contact,home,team,sitemap",140,1
+feature,Feature,,Footer,repeater,yes,no,"blog-archives,blog-category,blog-search,blog,category,blog-post,internal,contact,home,team,sitemap",150,1
+social,Social,,Footer,repeater,yes,no,"blog-archives,blog-category,blog-search,blog,category,blog-post,internal,contact,home,team,sitemap",160,1
+scroll_to_top_text,"Scroll To Top Text",,"Main Content",text,yes,no,"blog-archives,blog-category,blog-search,blog,category,blog-post,internal,contact,home,team,sitemap",170,1
+copyright,Copyright,,Footer,string,yes,no,"blog-archives,blog-category,blog-search,blog,category,blog-post,internal,contact,home,team,sitemap",210,1
+footer_html,"Footer Html",,Footer,text,yes,no,"blog-archives,blog-category,blog-search,blog,category,blog-post,internal,contact,home,team,sitemap",230,1
+content,Content,,"Main Content",richtext,no,yes,"blog-archives,blog-category,blog-search,blog,category,blog-post,internal,contact,team",70,1
+title,Title,,"Main Content",string,no,yes,"blog-archives,blog-category,blog-search,blog,category,blog-post,internal,contact,home,team,sitemap",60,1
+content_image,"Content Image",,"Page Listing",image,no,yes,"blog-archives,blog-category,blog-search,blog,category,blog-post,internal,contact,home,team,sitemap",240,1
+lead_text,"Lead Text",,"Main Content",text,no,yes,"blog-archives,blog-category,blog-search,blog,category,blog-post,internal,contact,home,team",65,1
+blog_archive_page,"Blog Archive Page",,Blog,selectpage,yes,no,"blog-archives,blog-category,blog-search,blog,blog-post",130,1
+blog_category_page,"Blog Category Page",,Blog,selectpage,yes,no,"blog-archives,blog-category,blog-search,blog,blog-post",120,1
+blog_main_page,"Blog Main Page",,Blog,selectpage,yes,no,"blog-archives,blog-category,blog-search,blog,blog-post",100,1
+blog_search_page,"Blog Search Page",,Blog,selectpage,yes,no,"blog-archives,blog-category,blog-search,blog,category,blog-post,internal,contact,home,team,sitemap",110,1
+category_view,"Category View",,"Main Content",select,no,no,"blog-archives,blog-category,blog-search,blog,category",110,1
+post_date,"Post Date",,"Main Content",datetime,no,no,blog-post,85,1
+post_author,"Post Author",,"Main Content",selectuser,no,no,blog-post,84,1
+video,Video,,"Main Content",video,no,no,"blog-post,internal",110,1
+categories,Categories,,Filters,selectmultiplewnew,no,no,blog-post,110,1
+comments,Comments,,"Main Content",repeater,no,no,blog-post,130,1
+email,Email,,"Main Content",string,no,no,contact,110,1
+phone,Phone,,"Main Content",string,no,no,contact,120,1
+address,Address,,"Main Content",text,no,no,contact,130,1
+contact_form_text,"Contact Form Text",,"Main Content",text,no,no,contact,145,1
+contact_form,"Contact Form",,"Main Content",form,no,no,contact,140,1
+map_link,"Map Link",,"Main Content",string,no,no,contact,150,1
+carousel,Carousel,,Banners,repeater,no,no,home,70,1
+show_sub_pages,"Show Sub Pages",,"Main Content",selectpage,no,no,home,100,1
+banner,"Mini Banner",,"Main Content",repeater,no,no,home,110,1
+sidebar_title,"Sidebar Title",,Sidebar,string,no,no,internal,80,1
+sidebar_content,"Sidebar Content",,Sidebar,richtext,no,no,internal,90,1
+team,Team,,"Main Content",repeater,no,no,team,110,1
+comment_author,"Comment Author",,"Main Content",string,no,no,,80,1
+comment_content,"Comment Content",,"Main Content",text,no,no,,30,1
+comment_date,"Comment Date",,"Main Content",datetime,no,no,,100,1
+slide_image,"Slide Image",,"Main Content",image,no,no,,110,1
+slide_title,"Slide Title",,"Main Content",string,no,no,,120,1
+slide_text,"Slide Text",,"Main Content",text,no,no,,130,1
+slide_button_link,"Slide Button Link",,"Main Content",link,no,no,,140,1
+slide_button_text,"Slide Button Text",,"Main Content",text,no,no,,150,1
+slide_button_icon,"Slide Button Icon",,"Main Content",selectclass,no,no,,160,1
+banner_link,"Banner Link",,Banners,link,no,no,,170,1
+banner_image,"Banner Image",,Banners,image,no,no,,180,1
+member_image,"Member Image",,"Main Content",image,no,no,,190,1
+member_name,"Member Name",,"Main Content",string,no,no,,200,1
+member_text,"Member Text",,"Main Content",text,no,no,,210,1
+feature_icon,"Feature Icon",,"Main Content",selectclass,no,no,,50,1
+feature_title,"Feature Title",,"Main Content",string,no,no,,30,1
+feature_text,"Feature Text",,"Main Content",text,no,no,,40,1
+social_link,"Social Link",,"Main Content",link,no,no,,50,1
+social_icon,"Social Icon",,"Main Content",selectclass,no,no,,90,1
+social_name,"Social Name",,"Main Content",string,no,no,,70,1
