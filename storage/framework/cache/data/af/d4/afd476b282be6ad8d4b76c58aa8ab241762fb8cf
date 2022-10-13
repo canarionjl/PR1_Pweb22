@@ -1,4 +1,5 @@
-1664564776s:9388:"<!DOCTYPE html>
+1664748128s:9472:"<!DOCTYPE html>
+c70bb5f4f8ccadda70a39ca68e45689fa58aaebe
 <html lang="en">
 <head itemscope>
     <meta charset="utf-8">
@@ -140,19 +141,19 @@
         <div class="col-sm-4">
             <img src="http://proyectoweb22.test/uploads/IMG_0322.jpg" title="IMG 0322" alt="IMG 0322" class="img-responsive img-inline" >
             <h3>Jose Luis Benítez Santana</h3>
-            <p>http://proyectoweb22.test/paginaPersonal/JoseLuis</p>
+            <p><a href="http://proyectoweb22.test/paginaPersonal/JoseLuis">Ver página personal</a></p>
         </div>
 
 <div class="col-sm-4">
             <img src="http://proyectoweb22.test/uploads/foto.jpg" title="foto" alt="foto" class="img-responsive img-inline" >
             <h3>Himar Moreno Santana</h3>
-            <p>http://proyectoweb22.test/paginaPersonal/Himar</p>
+            <p><a href="http://proyectoweb22.test/paginaPersonal/Himar">Ver página personal</a></p>
         </div>
 
 <div class="col-sm-4">
             
             <h3>Alvaro</h3>
-            <p>http://proyectoweb22.test/paginaPersonal/Alvaro</p>
+            <p><a href="http://proyectoweb22.test/paginaPersonal/Alvaro">Ver página personal</a></p>
         </div>
 
     </div>
