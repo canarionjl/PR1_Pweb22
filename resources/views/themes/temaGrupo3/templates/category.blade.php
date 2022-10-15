@@ -12,7 +12,7 @@
             <div class="col-sm-12">
                 <h1>{!! PageBuilder::block('title') !!}</h1>
                 <p class="lead">{!! PageBuilder::block('lead_text') !!}</p>
-                {{--                {!! PageBuilder::block('content') !!}--}}
+                 {!! PageBuilder::block('content') !!}
             </div>
         </div>
 

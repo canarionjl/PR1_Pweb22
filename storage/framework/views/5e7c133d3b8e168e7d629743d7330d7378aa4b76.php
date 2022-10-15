@@ -45,7 +45,7 @@
                     <div class="event-speaker">Precio: 3€/kg (1 caja es igual a 10 kg)</div>
                 </header>
 
-                <a class="btn gradient-bg" href="/productos/zanahoria">Ver más</a>
+                <a class="btn gradient-bg" href="/productos/zanahoria" >Ver más</a>
 
             </div>
 

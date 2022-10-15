@@ -28,5 +28,4 @@
 
 </section>
 
-
-{{--{!! PageBuilder::section('footer') !!}--}}
+ PageBuilder::section('footer')
