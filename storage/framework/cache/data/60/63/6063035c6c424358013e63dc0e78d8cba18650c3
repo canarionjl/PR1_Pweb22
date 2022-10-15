@@ -1,18 +1,18 @@
-1665842913s:6291:"<!DOCTYPE html>
+1665863556s:9811:"<!DOCTYPE html>
 <html lang="en">
 <head itemscope>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Products | Coaster CMS</title>
-    <meta name="description" content="Products">
+    <title>Productos | Coaster CMS</title>
+    <meta name="description" content="Productos">
     <meta name="keywords" content="">
 
-    <meta property="og:title" content="Products | Coaster CMS">
-    <meta property="og:description" content="Products">
-    <meta itemprop="name" content="Products | Coaster CMS">
-    <meta itemprop="description" content="Products">
+    <meta property="og:title" content="Productos | Coaster CMS">
+    <meta property="og:description" content="Productos">
+    <meta itemprop="name" content="Productos | Coaster CMS">
+    <meta itemprop="description" content="Productos">
 
     <meta name="revisit-after" content="7 days">
 
@@ -61,11 +61,8 @@
     <li class="">
     <a href="/meet-the-team">Meet the Team</a>
 </li>
-    <li class="">
-    <a href="/locations">Locations</a>
-</li>
     <li class=" active">
-    <a href="/products">Products</a>
+    <a href="/productos">Productos</a>
 </li>
     <li class="">
     <a href="/contact">Contact Us</a>
@@ -82,7 +79,8 @@
 
 
 
-<div class="jumbotron" style="background: url(http://proyectoweb22.test/uploads/images/coaster2017/banner.jpg) no-repeat center"></div>
+<div class="jumbotron"
+     style="background: url(http://proyectoweb22.test/uploads/images/coaster2017/banner.jpg) no-repeat center"></div>
 
 <section id="sec1">
     <div class="container">
@@ -91,7 +89,7 @@
     <div class="col-sm-12">
         <ul class="breadcrumb">
             <li><a href="http://proyectoweb22.test">Home</a></li>
-<li class="active">Products</li>
+<li class="active">Productos</li>
 
         </ul>
     </div>
@@ -99,20 +97,118 @@
 
         <div class="row">
             <div class="col-sm-12">
-                <h1>Products</h1>
-                <p class="lead"></p>
+                <h1>Productos</h1>
+                <p class="lead">A continuación, se muestran todos los productos locales ofrecidos en nuestro mercado online</p>
                 
             </div>
         </div>
 
-                            <div class="row">
-                <div class="col-sm-12">
-                    <p>&nbsp;</p>
-                    <p>No pages found</p>
-                </div>
-            </div>
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <div class="" style="display:flex; flex-direction: row;
+                justify-content: space-evenly; flex-wrap: wrap; align-items: stretch; gap: 30px 30px">
+
+            <div class="">
+
+                <figure class="">
+                    <a><img src="uploads/images.jpg" alt=""></a>
+                </figure>
+
+                <header class="">
+                    <h3 class="entry-title"><a href="#">Zanahorias</a></h3>
+                    <div class="event-date-time">Frutas y Hortalizas Ecológicas Rodríguez</div>
+                    <div class="event-speaker">Precio: 3€/kg (1 caja es igual a 10 kg)</div>
+                </header>
+
+                <a class="btn gradient-bg" href="/productos/zanahoria">Ver más</a>
+
+            </div>
+
+
+            <div class="">
+                <figure class="">
+                    <a><img src="uploads/perejil.jpeg" style="width:250px; height:auto"></a>
+                </figure>
+
+                <header class="">
+                    <h3 class="entry-title"><a href="#">Perejil</a></h3>
+                    <div class="event-date-time">Frutas y Hortalizas Ecológicas Rodríguez</div>
+                    <div class="event-speaker">Precio: 2€/kg (1 manojo es igual a 0.1 kg)</div>
+                </header>
+
+                <a class="btn gradient-bg" href="#">Ver más</a>
+            </div>
+
+            <div class="">
+                <figure class="">
+                    <a><img src="uploads/images.jpg" alt=""></a>
+                </figure>
+
+                <header class="">
+                    <h3 class="entry-title"><a href="#">Zanahorias</a></h3>
+                    <div class="event-date-time">Frutas y Hortalizas Ecológicas Rodríguez</div>
+                    <div class="event-speaker">Precio: 3€/kg (1 caja == 10 kg)</div>
+                </header>
+
+                <a class="btn gradient-bg" href="#">Ver más</a>
+            </div>
+
+            <div class="">
+                <figure class="">
+                    <a><img src="uploads/images.jpg" alt=""></a>
+                </figure>
+
+                <header class="">
+                    <h3 class="entry-title"><a href="#">Zanahorias</a></h3>
+                    <div class="event-date-time">Frutas y Hortalizas Ecológicas Rodríguez</div>
+                    <div class="event-speaker">Precio: 3€/kg (1 caja == 10 kg)</div>
+                </header>
+
+                <a class="btn gradient-bg" href="#">Ver más</a>
+            </div>
+
+            <div class="">
+                <figure class="">
+                    <a><img src="uploads/images.jpg" alt=""></a>
+                </figure>
+
+                <header class="">
+                    <h3 class="entry-title"><a href="#">Zanahorias</a></h3>
+                    <div class="event-date-time">Frutas y Hortalizas Ecológicas Rodríguez</div>
+                    <div class="event-speaker">Precio: 3€/kg (1 caja == 10 kg)</div>
+                </header>
+
+                <a class="btn gradient-bg" href="#">Ver más</a>
+            </div>
+
+            <div class="">
+                <figure class="">
+                    <a><img src="uploads/images.jpg" alt=""></a>
+                </figure>
+
+                <header class="">
+                    <h3 class="entry-title"><a href="#">Zanahorias</a></h3>
+                    <div class="event-date-time">Frutas y Hortalizas Ecológicas Rodríguez</div>
+                    <div class="event-speaker">Precio: 3€/kg (1 caja == 10 kg)</div>
+                </header>
+
+                <a class="btn gradient-bg" href="#">Ver más</a>
+            </div>
+        </div>
+
     </div>
+    </div>
+
     <!-- /.container -->
 </section>
 

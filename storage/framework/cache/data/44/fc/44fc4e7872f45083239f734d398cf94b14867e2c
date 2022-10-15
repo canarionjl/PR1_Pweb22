@@ -1,18 +1,18 @@
-1664478554s:9555:"<!DOCTYPE html>
+1665861641s:3710:"<!DOCTYPE html>
 <html lang="en">
 <head itemscope>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Mountains | Coaster CMS</title>
-    <meta name="description" content="Mountains">
+    <title>Zanahorias | Coaster CMS</title>
+    <meta name="description" content="Zanahorias">
     <meta name="keywords" content="">
 
-    <meta property="og:title" content="Mountains | Coaster CMS">
-    <meta property="og:description" content="Mountains">
-    <meta itemprop="name" content="Mountains | Coaster CMS">
-    <meta itemprop="description" content="Mountains">
+    <meta property="og:title" content="Zanahorias | Coaster CMS">
+    <meta property="og:description" content="Zanahorias">
+    <meta itemprop="name" content="Zanahorias | Coaster CMS">
+    <meta itemprop="description" content="Zanahorias">
 
     <meta name="revisit-after" content="7 days">
 
@@ -47,7 +47,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="logo" href="/">
-                <img src="/cache/uploads/images/coaster2017/logo-_x60.png?token=7bd2b4fd696614b0578cd97cce104750" title="logo" alt="logo" >
+                <img src="/cache/uploads/white-logo-_x60.png?token=7b1d049cf3b4ef464007cb4adde90f3b" title="white-logo" alt="white-logo" >
             </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
@@ -61,42 +61,9 @@
     <li class="">
     <a href="/meet-the-team">Meet the Team</a>
 </li>
-    <li class="dropdown ">
-    <a href="/locations" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Locations<b class="caret" data-toggle="dropdown"></b>
-    </a>
-    <ul class="dropdown-menu">
-        <li class=" active">
-    <a href="/locations/mountains">Mountains</a>
-</li>
     <li class="">
-    <a href="/locations/wall">The Wall</a>
+    <a href="/productos">Productos</a>
 </li>
-    <li class="">
-    <a href="/locations/lake">Nice Lake</a>
-</li>
-    <li class="">
-    <a href="/locations/trees">Patch of Trees</a>
-</li>
-
-    </ul>
-</li>
-
-    <li class="dropdown ">
-    <a href="/products" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Products &amp; Services<b class="caret" data-toggle="dropdown"></b>
-    </a>
-    <ul class="dropdown-menu">
-        <li class="">
-    <a href="/products/services">Services</a>
-</li>
-    <li class="">
-    <a href="/products/range">Products</a>
-</li>
-
-    </ul>
-</li>
-
     <li class="">
     <a href="/contact">Contact Us</a>
 </li>
@@ -121,168 +88,25 @@
     <div class="col-sm-12">
         <ul class="breadcrumb">
             <li><a href="http://proyectoweb22.test">Home</a></li>
-<li><a href="http://proyectoweb22.test/locations">Locations</a></li>
-<li class="active">Mountains</li>
+<li><a href="http://proyectoweb22.test/productos">Productos</a></li>
+<li class="active">Zanahorias</li>
 
         </ul>
     </div>
 </div>
 
         
+
         <div class="row">
-            <div class="col-sm-8">
-                <h1>Mountains</h1>
-                <p class="lead">Nemo enim ipsam voluptatem quia voluptas sit aspernatur</p>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-<p></p>
-                <div class="row">
-    <div class="col-sm-12">
-        <div class="videoWrapper">
-            <iframe style="border:0;padding-bottom:15px;" width="592" height="333" src="http://www.youtube.com/embed/q8kxKvSQ7MI" allowfullscreen></iframe>
-        </div>
-    </div>
-</div>
-            </div>
-                        <div class="col-sm-4">
-                <h2>Aside Content</h2>
-                
-            </div>
-                    </div>
+            <div class="col-sm-12">
+                <h1>Zanahorias</h1>
+                <p class="lead">"Hortalizas ecológicas Villa de Moya"</p>
+                <p>Precio: 3 euros/kg (1 caja equivale a 5 kg)</p>
+<form action="#"></form>
 
-    </div>
-</section>
-
-<section id="sec2">
-        <div class="container text-center">
-        <div class="row">
-            <div class="col-sm-10 col-sm-offset-1">
-                <h2>Why Us ?</h2>
-                <p class="lead">At vero eos et accusamus et iusto odio</p>
-            </div>
-        </div>
-        <hr />
-        <div class="row">
-
-    <div class="col-sm-4">
-        <i class="fa fa-desktop fa-2x"></i>
-
-        <h3>Picturesque</h3>
-        <p>Vel ad aliquid copiosae, cum id impetus tincidunt, solum option laoreet ei quo. No cum agam appareat vituperata ateum iusto paulo dignissim.</p>
-    </div>
-
-
-<div class="col-sm-4">
-        <i class="fa fa-life-ring fa-2x"></i>
-
-        <h3>Perfect Support</h3>
-        <p>Vel ad aliquid copiosae, cum id impetus tincidunt, solum option laoreet ei quo. No cum agam appareat vituperata ateum iusto paulo dignissim.</p>
-    </div>
-
-
-<div class="col-sm-4">
-        <i class="fa fa-wrench fa-2x"></i>
-
-        <h3>Customisable</h3>
-        <p>Vel ad aliquid copiosae, cum id impetus tincidunt, solum option laoreet ei quo. No cum agam appareat vituperata ateum iusto paulo dignissim.</p>
-    </div>
-
-</div>
-
-
-    </div>
-    </section>
-
-<section class="socialmedia">
-    <div class="container">
-        <div class="row text-center">
-
-            <div class="col-sm-3">
-                <p>
-                    <a href="">
-                        <i class="fa fa-youtube"></i> &nbsp; YouTube
-                    </a>
-                </p>
-            </div>
-
-<div class="col-sm-3">
-                <p>
-                    <a href="">
-                        <i class="fa fa-twitter-square"></i> &nbsp; Twitter
-                    </a>
-                </p>
-            </div>
-
-<div class="col-sm-3">
-                <p>
-                    <a href="">
-                        <i class="fa fa-linkedin-square"></i> &nbsp; LinkedIn
-                    </a>
-                </p>
-            </div>
-
-<div class="col-sm-3">
-                <p>
-                    <a href="">
-                        <i class="fa fa-facebook-square"></i> &nbsp; Facebook
-                    </a>
-                </p>
-            </div>
-
-        </div>
-    </div>
+            
 </section>
 
 
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <button class="btn btn-default" id="scrollbutton2">Back to top &nbsp; <i class="fa fa-arrow-up"></i></button>
-                <p>&copy; Coaster 2022. Powered by <a href="http://www.coastercms.org">Coaster CMS</a>.</p>
-            </div>
-        </div>
-    </div>
-</footer>
 
-<!-- Bootstrap core JavaScript
-    ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="http://proyectoweb22.test/themes/temaGrupo3/js/jquery.min.js"></script>
-<script src="http://proyectoweb22.test/themes/temaGrupo3/js/bootstrap.min.js"></script>
-
-<script type="text/javascript">
-    $(document).ready(function(){
-
-        $('#blogSearch').submit(function(event) {
-            event.preventDefault();
-            window.location.href = '/blog/search/'+$('#query').val();
-        });
-
-        $("#scrollbutton").click(function() {
-            $('html, body').animate({
-                scrollTop: $("#sec1").offset().top
-            }, 1000);
-        });
-
-        $("#scrollbutton2").click(function() {
-            $('html, body').animate({
-                scrollTop: 0
-            }, 1000);
-        });
-
-        $(window).scroll(function() {
-            if($(this).scrollTop() > 30) {
-                $('.navbar-inverse').addClass("morenav");
-            }
-            else{
-                $('.navbar-inverse').removeClass("morenav");
-            }
-        });
-
-    });
-</script>
-
-
-</body>
-</html>
 ";

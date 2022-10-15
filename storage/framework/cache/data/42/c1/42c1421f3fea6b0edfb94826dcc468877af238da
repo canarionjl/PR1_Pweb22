@@ -1,18 +1,18 @@
-1665842913s:6291:"<!DOCTYPE html>
+1665845253s:6609:"<!DOCTYPE html>
 <html lang="en">
 <head itemscope>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Products | Coaster CMS</title>
-    <meta name="description" content="Products">
+    <title>Mountains | Coaster CMS</title>
+    <meta name="description" content="Mountains">
     <meta name="keywords" content="">
 
-    <meta property="og:title" content="Products | Coaster CMS">
-    <meta property="og:description" content="Products">
-    <meta itemprop="name" content="Products | Coaster CMS">
-    <meta itemprop="description" content="Products">
+    <meta property="og:title" content="Mountains | Coaster CMS">
+    <meta property="og:description" content="Mountains">
+    <meta itemprop="name" content="Mountains | Coaster CMS">
+    <meta itemprop="description" content="Mountains">
 
     <meta name="revisit-after" content="7 days">
 
@@ -64,9 +64,6 @@
     <li class="">
     <a href="/locations">Locations</a>
 </li>
-    <li class=" active">
-    <a href="/products">Products</a>
-</li>
     <li class="">
     <a href="/contact">Contact Us</a>
 </li>
@@ -91,29 +88,32 @@
     <div class="col-sm-12">
         <ul class="breadcrumb">
             <li><a href="http://proyectoweb22.test">Home</a></li>
-<li class="active">Products</li>
+<li><a href="http://proyectoweb22.test/locations">Locations</a></li>
+<li class="active">Mountains</li>
 
         </ul>
     </div>
 </div>
 
+        
         <div class="row">
-            <div class="col-sm-12">
-                <h1>Products</h1>
-                <p class="lead"></p>
+            <div class="col-sm-8">
+                <h1>Zanahorias</h1>
+                <p class="lead">Vendidas por: "Hortalizas ecológicas Villa de Moya"</p>
+                <p>Precio: 3&euro;/kg</p>
+<form action="#"><label for="lang">Unidad: <space></space> </label><select name="lenguajes">
+<option value="caja">Caja(s)</option>
+<option value="kilogramos">Kilogramo(s)</option>
+</select><br /><br /><br /><input type="submit" value="Enviar" /></form>
                 
             </div>
-        </div>
-
-                            <div class="row">
-                <div class="col-sm-12">
-                    <p>&nbsp;</p>
-                    <p>No pages found</p>
-                </div>
+                        <div class="col-sm-4">
+                <h2></h2>
+                <p><img src="/uploads/images.jpg" width="600" height="400" alt="" /></p>
             </div>
-        
+                    </div>
+
     </div>
-    <!-- /.container -->
 </section>
 
 <section id="sec2">
@@ -184,5 +184,4 @@
 
 </body>
 </html>
-
 ";

@@ -14,15 +14,14 @@
         $sidebar_content = PageBuilder::block('sidebar_content');
         ?>
 
+
         <div class="row">
             <div class="<?php echo e(($sidebar_title || $sidebar_content)?'col-sm-8':'col-sm-12'); ?>">
                 <h1><?php echo PageBuilder::block('title'); ?></h1>
                 <p class="lead"><?php echo PageBuilder::block('lead_text'); ?></p>
                 <?php echo PageBuilder::block('content'); ?>
 
-                <?php echo PageBuilder::block('video'); ?>
 
-            </div>
             <?php if($sidebar_title || $sidebar_content): ?>
             <div class="col-sm-4">
                 <h2><?php echo $sidebar_title; ?></h2>
@@ -30,9 +29,9 @@
 
             </div>
             <?php endif; ?>
-        </div>
 
-    </div>
 </section>
 
-<?php echo PageBuilder::section('footer'); ?><?php /**PATH C:\laragon\www\proyectoweb22\resources\views/themes/temaGrupo3/templates/internal.blade.php ENDPATH**/ ?>
+
+
+<?php /**PATH C:\laragon\www\proyectoweb22\resources\views/themes/temaGrupo3/templates/internal.blade.php ENDPATH**/ ?>

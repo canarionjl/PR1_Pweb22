@@ -1,16 +1,16 @@
 <section id="sec2">
     <?php if(PageBuilder::block('show_features', ['import_return_value' => 1])): ?>
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-sm-10 col-sm-offset-1">
-                <h2><?php echo e(PageBuilder::block('features_title')); ?></h2>
-                <p class="lead"><?php echo e(PageBuilder::block('features_lead_text')); ?></p>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <h2><?php echo e(PageBuilder::block('features_title')); ?></h2>
+                    <p class="lead"><?php echo e(PageBuilder::block('features_lead_text')); ?></p>
+                </div>
             </div>
-        </div>
-        <hr />
-        <?php echo PageBuilder::block('feature'); ?>
+            <hr />
+            <?php echo PageBuilder::block('feature'); ?>
 
-    </div>
+        </div>
     <?php endif; ?>
 </section>
 

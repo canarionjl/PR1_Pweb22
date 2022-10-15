@@ -1,4 +1,4 @@
-1664750367s:13114:"<!DOCTYPE html>
+1665863526s:7982:"<!DOCTYPE html>
 <html lang="en">
 <head itemscope>
     <meta charset="utf-8">
@@ -47,7 +47,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="logo" href="/">
-                <img src="/cache/uploads/images/coaster2017/logo-_x60.png?token=7bd2b4fd696614b0578cd97cce104750" title="logo" alt="logo" >
+                <img src="/cache/uploads/white-logo-_x60.png?token=7b1d049cf3b4ef464007cb4adde90f3b" title="white-logo" alt="white-logo" >
             </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
@@ -61,42 +61,9 @@
     <li class="">
     <a href="/meet-the-team">Meet the Team</a>
 </li>
-    <li class="dropdown ">
-    <a href="/locations" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Locations<b class="caret" data-toggle="dropdown"></b>
-    </a>
-    <ul class="dropdown-menu">
-        <li class="">
-    <a href="/locations/mountains">Mountains</a>
-</li>
     <li class="">
-    <a href="/locations/wall">The Wall</a>
+    <a href="/productos">Productos</a>
 </li>
-    <li class="">
-    <a href="/locations/lake">Nice Lake</a>
-</li>
-    <li class="">
-    <a href="/locations/trees">Patch of Trees</a>
-</li>
-
-    </ul>
-</li>
-
-    <li class="dropdown ">
-    <a href="/products" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Products &amp; Services<b class="caret" data-toggle="dropdown"></b>
-    </a>
-    <ul class="dropdown-menu">
-        <li class="">
-    <a href="/products/services">Services</a>
-</li>
-    <li class="">
-    <a href="/products/range">Products</a>
-</li>
-
-    </ul>
-</li>
-
     <li class="">
     <a href="/contact">Contact Us</a>
 </li>
@@ -147,7 +114,7 @@
                         <div class="carwrap">
                             <h2>¡Compre sus productos locales!</h2>
                             <p>Cultivados en la Villa de Moya directamente para usted</p>
-                                                            <a href="/locations/mountains" class="btn btn-default">Comprar &nbsp; <i class="fa fa-money"></i></a>
+                                                            <button class="btn btn-default" id="scrollbutton">Comprar &nbsp; <i class="fa fa-money"></i></button>
                                                     </div>
                     </div>
                 </div>
@@ -174,168 +141,31 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-sm-10 col-sm-offset-1">
-                <h2>Locations</h2>
-                <p class="lead">Oomnis iste natus error sit voluptatem ipsa quae ab illo invent</p>
+                <h2></h2>
+                <p class="lead"></p>
             </div>
         </div>
         <hr />
-                <div class="row">
-
-            <div class="col-sm-6">
-            <img src="http://proyectoweb22.test/uploads/images/coaster2017/content_image1.jpg" title="content image1" alt="content image1" class="img-responsive" >
-        </div>
-    
-
-        <div class="col-sm-6">
-            <h3>Mountains</h3>
-            <p class="lead">Nemo enim ipsam voluptatem quia voluptas sit aspernatur</p>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore ...</p>
-            <a href="/locations/mountains" class="btn btn-default">More info</a>
-        </div>
-
-    
-</div>
-
-    <hr />
-<div class="row">
-
-    
-
-        <div class="col-sm-6">
-            <h3>The Wall</h3>
-            <p class="lead"></p>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore ...</p>
-            <a href="/locations/wall" class="btn btn-default">More info</a>
-        </div>
-
-            <div class="col-sm-6">
-            <img src="http://proyectoweb22.test/uploads/images/coaster2017/content_image2.jpg" title="content image2" alt="content image2" class="img-responsive" >
-        </div>
-    
-</div>
-
-    <hr />
-<div class="row">
-
-            <div class="col-sm-6">
-            <img src="http://proyectoweb22.test/uploads/images/coaster2017/cat1.jpg" title="cat1" alt="cat1" class="img-responsive" >
-        </div>
-    
-
-        <div class="col-sm-6">
-            <h3>Nice Lake</h3>
-            <p class="lead"></p>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore ...</p>
-            <a href="/locations/lake" class="btn btn-default">More info</a>
-        </div>
-
-    
-</div>
-
-    <hr />
-<div class="row">
-
-    
-
-        <div class="col-sm-6">
-            <h3>Patch of Trees</h3>
-            <p class="lead"></p>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore ...</p>
-            <a href="/locations/trees" class="btn btn-default">More info</a>
-        </div>
-
-            <div class="col-sm-6">
-            <img src="http://proyectoweb22.test/uploads/images/coaster2017/cat3.jpg" title="cat3" alt="cat3" class="img-responsive" >
-        </div>
-    
-</div>
-
-
-
+                
             </div>
 </section>
 
 
 
 <section id="sec2">
-        <div class="container text-center">
-        <div class="row">
-            <div class="col-sm-10 col-sm-offset-1">
-                <h2>Why Us ?</h2>
-                <p class="lead">At vero eos et accusamus et iusto odio</p>
+            <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <h2>¿Qué objetivo se persigue?</h2>
+                    <p class="lead">El objetivo de esta página es dar facilidad a los comercios de la Villa de Moya para vender sus productos online, de la misma manera que se le da facilidad a los agricultores para suministrar a los comercios dichos productos. &lt;br /&gt;
+        Con ello se pretende favorecer el consumo de productos locales así como reducir los intermediarios y los transportes de productos, reduciendo así el impacto medioambiental y favoreciendo, por tanto, un consumo sostenible.</p>
+                </div>
             </div>
+            <hr />
+            
         </div>
-        <hr />
-        <div class="row">
-
-    <div class="col-sm-4">
-        <i class="fa fa-desktop fa-2x"></i>
-
-        <h3>Picturesque</h3>
-        <p>Vel ad aliquid copiosae, cum id impetus tincidunt, solum option laoreet ei quo. No cum agam appareat vituperata ateum iusto paulo dignissim.</p>
-    </div>
-
-
-<div class="col-sm-4">
-        <i class="fa fa-life-ring fa-2x"></i>
-
-        <h3>Perfect Support</h3>
-        <p>Vel ad aliquid copiosae, cum id impetus tincidunt, solum option laoreet ei quo. No cum agam appareat vituperata ateum iusto paulo dignissim.</p>
-    </div>
-
-
-<div class="col-sm-4">
-        <i class="fa fa-wrench fa-2x"></i>
-
-        <h3>Customisable</h3>
-        <p>Vel ad aliquid copiosae, cum id impetus tincidunt, solum option laoreet ei quo. No cum agam appareat vituperata ateum iusto paulo dignissim.</p>
-    </div>
-
-</div>
-
-
-    </div>
     </section>
 
-<section class="socialmedia">
-    <div class="container">
-        <div class="row text-center">
-
-            <div class="col-sm-3">
-                <p>
-                    <a href="">
-                        <i class="fa fa-youtube"></i> &nbsp; YouTube
-                    </a>
-                </p>
-            </div>
-
-<div class="col-sm-3">
-                <p>
-                    <a href="">
-                        <i class="fa fa-twitter-square"></i> &nbsp; Twitter
-                    </a>
-                </p>
-            </div>
-
-<div class="col-sm-3">
-                <p>
-                    <a href="">
-                        <i class="fa fa-linkedin-square"></i> &nbsp; LinkedIn
-                    </a>
-                </p>
-            </div>
-
-<div class="col-sm-3">
-                <p>
-                    <a href="">
-                        <i class="fa fa-facebook-square"></i> &nbsp; Facebook
-                    </a>
-                </p>
-            </div>
-
-        </div>
-    </div>
-</section>
 
 
 <footer>
@@ -343,7 +173,7 @@
         <div class="row">
             <div class="col-sm-12 text-center">
                 <button class="btn btn-default" id="scrollbutton2">Back to top &nbsp; <i class="fa fa-arrow-up"></i></button>
-                <p>&copy; Coaster 2022. Powered by <a href="http://www.coastercms.org">Coaster CMS</a>.</p>
+                <p>&copy; Grupo 3 (PWEB) 2022. Powered by <a href="http://www.coastercms.org">Coaster CMS</a>.</p>
             </div>
         </div>
     </div>
