@@ -38,6 +38,13 @@ Route::get('/AlvaroPrivado', function() {
     include("../Practicas/AlvaroPrivado.html");
 });
 
+Route::get('/login', function() {
+    return view ('themes/temaGrupo3/login');
+});
+
+Route::get('/register', function() {
+    return view ('themes/temaGrupo3/register');
+});
 
 Route::get('paginaPersonal/{name_of_user?}', function($name_of_user = "Unknown") {
     $name_of_user;

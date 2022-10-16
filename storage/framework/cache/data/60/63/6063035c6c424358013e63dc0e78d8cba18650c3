@@ -1,18 +1,18 @@
-1665855064s:7057:"<!DOCTYPE html>
+1665853768s:6678:"<!DOCTYPE html>
 <html lang="en">
 <head itemscope>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Meet the Team | Coaster CMS</title>
-    <meta name="description" content="Meet the Team">
+    <title>Productos | Coaster CMS</title>
+    <meta name="description" content="Productos">
     <meta name="keywords" content="">
 
-    <meta property="og:title" content="Meet the Team | Coaster CMS">
-    <meta property="og:description" content="Meet the Team">
-    <meta itemprop="name" content="Meet the Team | Coaster CMS">
-    <meta itemprop="description" content="Meet the Team">
+    <meta property="og:title" content="Productos | Coaster CMS">
+    <meta property="og:description" content="Productos">
+    <meta itemprop="name" content="Productos | Coaster CMS">
+    <meta itemprop="description" content="Productos">
 
     <meta name="revisit-after" content="7 days">
 
@@ -58,10 +58,10 @@
     <li class="">
     <a href="/about">About Us</a>
 </li>
-    <li class=" active">
+    <li class="">
     <a href="/meet-the-team">Meet the Team</a>
 </li>
-    <li class="">
+    <li class=" active">
     <a href="/productos">Productos</a>
 </li>
     <li class="">
@@ -88,7 +88,7 @@
     <div class="col-sm-12">
         <ul class="breadcrumb">
             <li><a href="http://proyectoweb22.test">Home</a></li>
-<li class="active">Meet the Team</li>
+<li class="active">Productos</li>
 
         </ul>
     </div>
@@ -96,35 +96,33 @@
 
         <div class="row">
             <div class="col-sm-12">
-                <h1>Conoce a nuestro equipo</h1>
-                <p class="lead">A continuación, se muestran los desarrolladores que han llevado a cabo este projecto.</p>
+                <h1>Productos</h1>
+                <p class="lead">A continuación, se muestran todos los productos locales ofrecidos en nuestro mercado online</p>
                 
             </div>
         </div>
 
-        <div class="row text-center meetrow">
+                            <div class="row">
 
-        <div class="col-sm-4">
-            <img src="http://proyectoweb22.test/uploads/IMG_0322.jpg" title="IMG 0322" alt="IMG 0322" class="img-responsive img-inline" >
-            <h3>Jose Luis Benítez Santana</h3>
-            <p><a href="http://proyectoweb22.test/paginaPersonal/JoseLuis">Ver página personal</a></p>
+            <div class="col-sm-6">
+            <img src="http://proyectoweb22.test/uploads/images.jpg" title="images" alt="images" class="img-responsive" >
+        </div>
+    
+
+        <div class="col-sm-6">
+            <h3>Zanahorias</h3>
+            <p class="lead">"Hortalizas ecológicas Villa de Moya"</p>
+            <p>Precio: 3 euros/kg (1 caja equivale a 5 kg)
+</p>
+            <a href="/productos/zanahorias" class="btn btn-default">More info</a>
         </div>
 
-<div class="col-sm-4">
-            <img src="http://proyectoweb22.test/uploads/foto.jpg" title="foto" alt="foto" class="img-responsive img-inline" >
-            <h3>Himar Moreno Santana</h3>
-            <p><a href="http://proyectoweb22.test/paginaPersonal/Himar">Ver página personal</a></p>
-        </div>
-
-<div class="col-sm-4">
-            
-            <h3>Alvaro</h3>
-            <p><a href="http://proyectoweb22.test/paginaPersonal/Alvaro">Ver página personal</a></p>
-        </div>
-
-    </div>
+    
+</div>
 
 
+
+        
     </div>
     <!-- /.container -->
 </section>
@@ -197,4 +195,5 @@
 
 </body>
 </html>
+
 ";
