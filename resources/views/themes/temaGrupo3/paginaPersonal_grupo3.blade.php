@@ -18,7 +18,6 @@
                     include ('../resources/views/themes/temaGrupo3/errors/404.blade.php');
                     break;
             }
-
             ?>
     @endif
 
