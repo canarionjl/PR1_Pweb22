@@ -53,4 +53,5 @@ Route::get('paginaPersonal/{name_of_user?}', function($name_of_user = "Unknown")
 Route::get('productos/{product_type}', function($product_type) {
     return view ('themes/temaGrupo3/product_detail',compact('product_type'));
 });
-
+Route::get('api/get/{startDate}/{endDate}','App\Http\Controllers\SensorController@index')->name('SensorController.index');
+Route::post('api/add','App\Http\Controllers\SensorController@store')->name('SensorController.store');

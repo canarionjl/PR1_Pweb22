@@ -6,5 +6,4 @@
         $page = $_POST["page"];
         echo "La orden a ejecutar es <a href=\"$page\">$page</a>";
     }
-
 ?>

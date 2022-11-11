@@ -34,7 +34,8 @@ directoryListing("../../Practicas");
 directoryListing(".");
 ?>
 <h1>Selecciona que archivo quieres ejecutar</h1>
-<form action="/misPhp/ejecutarArchivo.php" method="post">
+<!--<form action="/misPhp/ejecutarArchivo.php" method="post">-->
+<form action="/api/add" method="post">
     <select name="page">
         <option disabled selected value> -- elije una opción -- </option>
         <option value="/AlvaroPublico.html">/AlvaroPublico.html</option>
