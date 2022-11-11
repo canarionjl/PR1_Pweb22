@@ -1,4 +1,4 @@
-1667497834s:8647:"<!DOCTYPE html>
+1668107156s:6177:"<!DOCTYPE html>
 <html lang="en">
 <head itemscope>
     <meta charset="utf-8">
@@ -20,10 +20,10 @@
     <link href="https://fonts.googleapis.com/css?family=Passion+One:400,700,900" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
-    <link href="http://proyectoweb22.test/index.php/themes/temaGrupo3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://proyectoweb22.test/themes/temaGrupo3/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="http://proyectoweb22.test/index.php/themes/temaGrupo3/css/style.css" rel="stylesheet">
+    <link href="http://proyectoweb22.test/themes/temaGrupo3/css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -79,11 +79,7 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
 
-<<<<<<< HEAD
         <div class="item active" style="background-image:url('http://proyectoweb22.test/uploads/2017-06-22-19-47-06 (1).jpg')">
-=======
-        <div class="item active" style="background-image:url('http://proyectoweb22.test/index.php/uploads/2017-06-22-19-47-06 (1).jpg')">
->>>>>>> 9396092ebc58c849a04133c04eb45f89c920ee6a
 
             <div class="container">
                 <div class="row">
@@ -114,79 +110,7 @@
             </div>
         </div>
         <hr />
-                <div class="row">
-
-            <div class="col-sm-6">
-            <img src="http://proyectoweb22.test/uploads/images/coaster2017/content_image1.jpg" title="content image1" alt="content image1" class="img-responsive" >
-        </div>
-    
-
-        <div class="col-sm-6">
-            <h3>Mountains</h3>
-            <p class="lead">Nemo enim ipsam voluptatem quia voluptas sit aspernatur</p>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore ...</p>
-            <a href="/locations/mountains" class="btn btn-default">More info</a>
-        </div>
-
-    
-</div>
-
-    <hr />
-<div class="row">
-
-    
-
-        <div class="col-sm-6">
-            <h3>The Wall</h3>
-            <p class="lead"></p>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore ...</p>
-            <a href="/locations/wall" class="btn btn-default">More info</a>
-        </div>
-
-            <div class="col-sm-6">
-            <img src="http://proyectoweb22.test/uploads/images/coaster2017/content_image2.jpg" title="content image2" alt="content image2" class="img-responsive" >
-        </div>
-    
-</div>
-
-    <hr />
-<div class="row">
-
-            <div class="col-sm-6">
-            <img src="http://proyectoweb22.test/uploads/images/coaster2017/cat1.jpg" title="cat1" alt="cat1" class="img-responsive" >
-        </div>
-    
-
-        <div class="col-sm-6">
-            <h3>Nice Lake</h3>
-            <p class="lead"></p>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore ...</p>
-            <a href="/locations/lake" class="btn btn-default">More info</a>
-        </div>
-
-    
-</div>
-
-    <hr />
-<div class="row">
-
-    
-
-        <div class="col-sm-6">
-            <h3>Patch of Trees</h3>
-            <p class="lead"></p>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore ...</p>
-            <a href="/locations/trees" class="btn btn-default">More info</a>
-        </div>
-
-            <div class="col-sm-6">
-            <img src="http://proyectoweb22.test/uploads/images/coaster2017/cat3.jpg" title="cat3" alt="cat3" class="img-responsive" >
-        </div>
-    
-</div>
-
-
-
+                
             </div>
 </section>
 
@@ -221,8 +145,8 @@
 <!-- Bootstrap core JavaScript
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="http://proyectoweb22.test/index.php/themes/temaGrupo3/js/jquery.min.js"></script>
-<script src="http://proyectoweb22.test/index.php/themes/temaGrupo3/js/bootstrap.min.js"></script>
+<script src="http://proyectoweb22.test/themes/temaGrupo3/js/jquery.min.js"></script>
+<script src="http://proyectoweb22.test/themes/temaGrupo3/js/bootstrap.min.js"></script>
 
 <script type="text/javascript">
     $(document).ready(function(){

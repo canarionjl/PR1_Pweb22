@@ -32,6 +32,7 @@ class DatabaseSeeder extends Seeder
            ProductoSeeder::class,
            TipoProductoSeeder::class,
            UsuarioSeeder::class,
+           DatosSensoresSeeder::class,
        ]);
     }
 }
