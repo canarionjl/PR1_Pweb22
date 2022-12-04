@@ -1,4 +1,4 @@
-1665855064s:7057:"<!DOCTYPE html>
+1670064265s:9149:"<!DOCTYPE html>
 <html lang="en">
 <head itemscope>
     <meta charset="utf-8">
@@ -47,28 +47,22 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="logo" href="/">
-                <img src="/cache/uploads/white-logo-_x60.png?token=7b1d049cf3b4ef464007cb4adde90f3b" title="white-logo" alt="white-logo" >
+                <img src="/cache/uploads/images/coaster2017/logo-_x60.png?token=7bd2b4fd696614b0578cd97cce104750" title="logo" alt="logo" >
             </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li class="">
-    <a href="/">Home</a>
+    <a href="/">Inicio</a>
 </li>
     <li class="">
-    <a href="/about">About Us</a>
+    <a href="/products">Productos (Mercado Online)</a>
+</li>
+    <li class="">
+    <a href="/about">¿Quiénes somos?</a>
 </li>
     <li class=" active">
-    <a href="/meet-the-team">Meet the Team</a>
-</li>
-    <li class="">
-    <a href="/productos">Productos</a>
-</li>
-    <li class="">
-    <a href="/contact">Contact Us</a>
-</li>
-    <li class="">
-    <a href="/blog">Our Blog</a>
+    <a href="/meet-the-team">Conoce a los desarrolladores</a>
 </li>
 
             </ul>
@@ -96,30 +90,39 @@
 
         <div class="row">
             <div class="col-sm-12">
-                <h1>Conoce a nuestro equipo</h1>
-                <p class="lead">A continuación, se muestran los desarrolladores que han llevado a cabo este projecto.</p>
-                
+                <h1>Meet the Team</h1>
+                <p class="lead">Nemo enim ipsam voluptatem quia voluptas sit aspernatur</p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
             </div>
         </div>
 
         <div class="row text-center meetrow">
 
         <div class="col-sm-4">
-            <img src="http://proyectoweb22.test/uploads/IMG_0322.jpg" title="IMG 0322" alt="IMG 0322" class="img-responsive img-inline" >
-            <h3>Jose Luis Benítez Santana</h3>
-            <p><a href="http://proyectoweb22.test/paginaPersonal/JoseLuis">Ver página personal</a></p>
+            <img src="http://proyectoweb22.test/uploads/images/coaster2017/team.jpg" title="team" alt="team" class="img-responsive img-inline" >
+            <h3>Johanne Smith Again (Accountant)</h3>
+            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</p>
         </div>
 
 <div class="col-sm-4">
-            <img src="http://proyectoweb22.test/uploads/foto.jpg" title="foto" alt="foto" class="img-responsive img-inline" >
-            <h3>Himar Moreno Santana</h3>
-            <p><a href="http://proyectoweb22.test/paginaPersonal/Himar">Ver página personal</a></p>
+            <img src="http://proyectoweb22.test/uploads/images/coaster2017/team.jpg" title="team" alt="team" class="img-responsive img-inline" >
+            <h3>The Real Johanne Smith (Sales)</h3>
+            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</p>
         </div>
 
 <div class="col-sm-4">
-            
-            <h3>Alvaro</h3>
-            <p><a href="http://proyectoweb22.test/paginaPersonal/Alvaro">Ver página personal</a></p>
+            <img src="http://proyectoweb22.test/uploads/images/coaster2017/team.jpg" title="team" alt="team" class="img-responsive img-inline" >
+            <h3>Johanne Smith's Clone (Help Desk)</h3>
+            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</p>
+        </div>
+
+    </div>
+<div class="row text-center meetrow">
+
+        <div class="col-sm-4">
+            <img src="http://proyectoweb22.test/uploads/images/coaster2017/team.jpg" title="team" alt="team" class="img-responsive img-inline" >
+            <h3>Johanne Smith (Team Leader)</h3>
+            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</p>
         </div>
 
     </div>
@@ -130,19 +133,84 @@
 </section>
 
 <section id="sec2">
-        <div class="container text-center">
-        <div class="row">
-            <div class="col-sm-10 col-sm-offset-1">
-                <h2>¿Qué objetivo se persigue?</h2>
-                <p class="lead">El objetivo de esta página es dar facilidad a los comercios de la Villa de Moya para vender sus productos online, de la misma manera que se le da facilidad a los agricultores para suministrar a los comercios dichos productos. &lt;br /&gt;
-        Con ello se pretende favorecer el consumo de productos locales así como reducir los intermediarios y los transportes de productos, reduciendo así el impacto medioambiental y favoreciendo, por tanto, un consumo sostenible.</p>
+            <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <h2>Why Us ?</h2>
+                    <p class="lead">At vero eos et accusamus et iusto odio</p>
+                </div>
             </div>
-        </div>
-        <hr />
-        
+            <hr />
+            <div class="row">
+
+    <div class="col-sm-4">
+        <i class="fa fa-desktop fa-2x"></i>
+
+        <h3>Picturesque</h3>
+        <p>Vel ad aliquid copiosae, cum id impetus tincidunt, solum option laoreet ei quo. No cum agam appareat vituperata ateum iusto paulo dignissim.</p>
     </div>
+
+
+<div class="col-sm-4">
+        <i class="fa fa-life-ring fa-2x"></i>
+
+        <h3>Perfect Support</h3>
+        <p>Vel ad aliquid copiosae, cum id impetus tincidunt, solum option laoreet ei quo. No cum agam appareat vituperata ateum iusto paulo dignissim.</p>
+    </div>
+
+
+<div class="col-sm-4">
+        <i class="fa fa-wrench fa-2x"></i>
+
+        <h3>Customisable</h3>
+        <p>Vel ad aliquid copiosae, cum id impetus tincidunt, solum option laoreet ei quo. No cum agam appareat vituperata ateum iusto paulo dignissim.</p>
+    </div>
+
+</div>
+
+
+        </div>
     </section>
 
+<section class="socialmedia">
+    <div class="container">
+        <div class="row text-center">
+
+            <div class="col-sm-3">
+                <p>
+                    <a href="">
+                        <i class="fa fa-youtube"></i> &nbsp; YouTube
+                    </a>
+                </p>
+            </div>
+
+<div class="col-sm-3">
+                <p>
+                    <a href="">
+                        <i class="fa fa-twitter-square"></i> &nbsp; Twitter
+                    </a>
+                </p>
+            </div>
+
+<div class="col-sm-3">
+                <p>
+                    <a href="">
+                        <i class="fa fa-linkedin-square"></i> &nbsp; LinkedIn
+                    </a>
+                </p>
+            </div>
+
+<div class="col-sm-3">
+                <p>
+                    <a href="">
+                        <i class="fa fa-facebook-square"></i> &nbsp; Facebook
+                    </a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
 
 
 <footer>
@@ -150,7 +218,7 @@
         <div class="row">
             <div class="col-sm-12 text-center">
                 <button class="btn btn-default" id="scrollbutton2">Back to top &nbsp; <i class="fa fa-arrow-up"></i></button>
-                <p>&copy; Grupo 3 (PWEB) 2022. Powered by <a href="http://www.coastercms.org">Coaster CMS</a>.</p>
+                <p>&copy; Coaster 2022. Powered by <a href="http://www.coastercms.org">Coaster CMS</a>.</p>
             </div>
         </div>
     </div>
@@ -167,7 +235,7 @@
 
         $('#blogSearch').submit(function(event) {
             event.preventDefault();
-            window.location.href = '/blog/search/'+$('#query').val();
+            window.location.href = '/'+$('#query').val();
         });
 
         $("#scrollbutton").click(function() {

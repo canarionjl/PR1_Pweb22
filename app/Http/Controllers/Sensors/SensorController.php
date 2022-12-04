@@ -1,13 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Sensors;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 use App\Models\DatosSensor;
 use Carbon\Carbon;
-use Illuminate\Routing\Redirector;
-use Illuminate\Support\Facades\Redirect;
+use Illuminate\Http\Request;
 
 class SensorController extends Controller
 {
