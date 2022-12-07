@@ -7,6 +7,9 @@
         <div class="row text-center">
             <div class="col-sm-10 col-sm-offset-1">
                 <h2>{{ PageBuilder::block('title') }}</h2>
+                @if(Auth::Check())
+                  <h1>{{Auth::user()}}</h1>
+                @endif
                 <p class="lead">{{ PageBuilder::block('lead_text') }}</p>
             </div>
         </div>
@@ -16,7 +19,4 @@
         @endif
     </div>
 </section>
-
-
-
 {!! PageBuilder::section('footer') !!}

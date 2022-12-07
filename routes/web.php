@@ -20,7 +20,7 @@ Route::get('/JoseLuis', function() {
 });
 
 Route::get('/JoseLuisPrivado', function() {
-    include("../Practicas/JoseLuisPrivado.html");
+    include("../Practicas/JoseLuisPrivado");
 });
 
 Route::get('/Himar', function() {
@@ -51,17 +51,16 @@ Route::get('productos/{product_type}', function($product_type) {
     return view ('themes/temaGrupo3/product_detail',compact('product_type'));
 });
 
-Route::get('login', [LoginController::class,'index']);
+Route::get('login', [LoginController::class,'index'])->name('login');
 
-Route::post('login', function() {
-    return request()-> only('email','password');
-}) -> name('login');
+Route::post('login',[LoginController::class,'store'])->name('SensorController.store');
 
-
-Route::get('register', [RegisterController::class,'index']);
+Route::get('register', [RegisterController::class,'index'])->name('register');
 Route::post('register', [RegisterController::class,'store']);
 
-
+Route::get('/',function(){
+   return view('themes/temaGrupo3/templates/home');
+})->middleware('auth');
 
 
 Route::get('api/get/{startDate}/{endDate}','App\Http\Controllers\SensorController@index')->name('SensorController.index');

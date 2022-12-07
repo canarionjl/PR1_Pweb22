@@ -204,10 +204,10 @@
             <div id="fButton">
                 <button type="submit" class="registerButton">Crear cuenta</button>
             </div>
-            <div>
-                <button class="register2Button">Iniciar Sesión</button>
-            </div>
         </form>
+        <div>
+            <button class="register2Button" onclick="location.href='{{route('login')}}'">Iniciar Sesión</button>
+        </div>
     </section>
 </main>
 {!! PageBuilder::section('footer') !!}

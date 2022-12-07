@@ -138,29 +138,30 @@
     </section>
 
     <section class="sSection">
-        @if(session('status'))
-            <div>
-                <h4 style="color:green">{{session('status')}}</h4>
-            </div>
-        @endif
         <h1>Iniciar Sesión</h1>
         <form method='POST'>
             @csrf
             <h3 class="inputIntro">Nombre de usuario:</h3>
             <div>
                 <input name="email" type="email">
+                @error ('email')
+                <h6 style="color:red">{{$message}}</h6>
+                @enderror
             </div>
             <h3 class="inputIntro">Contraseña:</h3>
             <div id="secondText">
                 <input name="password" type="password">
+                @error ('password')
+                <h6 style="color:red">{{$message}}</h6>
+                @enderror
             </div>
             <div id="fButton">
                 <button type="submit" class="loginButton">Iniciar Sesión</button>
             </div>
-            <div>
-                <button class="login2Button">Crear cuenta</button>
-            </div>
         </form>
+        <div>
+            <button class="login2Button" onclick="location.href='{{route('register')}}'">Crear cuenta</button>
+        </div>
     </section>
 </main>
 {!! PageBuilder::section('footer') !!}

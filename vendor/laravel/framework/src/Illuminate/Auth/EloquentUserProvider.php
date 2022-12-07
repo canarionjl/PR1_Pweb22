@@ -34,7 +34,12 @@ class EloquentUserProvider implements UserProvider
      */
     public function __construct(HasherContract $hasher, $model)
     {
-        $this->model = $model;
+        if(env('APP_COASTERPANEL')){
+            $this->model = $model;
+        }else{
+            $this->model = \App\Models\Usuario::class;
+        }
+
         $this->hasher = $hasher;
     }
 

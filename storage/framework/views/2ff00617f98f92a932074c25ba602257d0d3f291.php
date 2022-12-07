@@ -139,29 +139,44 @@
     </section>
 
     <section class="sSection">
-        <?php if(session('status')): ?>
-            <div>
-                <h4 style="color:green"><?php echo e(session('status')); ?></h4>
-            </div>
-        <?php endif; ?>
         <h1>Iniciar Sesión</h1>
         <form method='POST'>
             <?php echo csrf_field(); ?>
             <h3 class="inputIntro">Nombre de usuario:</h3>
             <div>
                 <input name="email" type="email">
+                <?php $__errorArgs = ['email'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                <h6 style="color:red"><?php echo e($message); ?></h6>
+                <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
             </div>
             <h3 class="inputIntro">Contraseña:</h3>
             <div id="secondText">
                 <input name="password" type="password">
+                <?php $__errorArgs = ['password'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                <h6 style="color:red"><?php echo e($message); ?></h6>
+                <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
             </div>
             <div id="fButton">
                 <button type="submit" class="loginButton">Iniciar Sesión</button>
             </div>
-            <div>
-                <button class="login2Button">Crear cuenta</button>
-            </div>
         </form>
+        <div>
+            <button class="login2Button" onclick="location.href='<?php echo e(route('register')); ?>'">Crear cuenta</button>
+        </div>
     </section>
 </main>
 <?php echo PageBuilder::section('footer'); ?>

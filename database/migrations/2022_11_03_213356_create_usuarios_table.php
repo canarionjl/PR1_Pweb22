@@ -24,11 +24,12 @@ class CreateUsuariosTable extends Migration
                 -> default('usuario@example.es');
 
                 $table->string('password',255);
-                $table->string('telefono',255) -> default(null);
+                $table->string('telefono',255) -> nullable(true)-> default(null);
 
                 $table->enum('tipoUsuario',['Productor','Vendedor','Cliente']) -> default('Cliente');
 
-                $table->string('direccion',255);
+                $table->string('direccion',255)-> nullable(true);
+                $table->rememberToken()-> nullable(true);
             });
     }
 

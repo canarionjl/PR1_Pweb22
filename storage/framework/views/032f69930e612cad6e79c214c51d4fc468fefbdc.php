@@ -9,6 +9,9 @@
         <div class="row text-center">
             <div class="col-sm-10 col-sm-offset-1">
                 <h2><?php echo e(PageBuilder::block('title')); ?></h2>
+                <?php if(Auth::Check()): ?>
+                  <h1><?php echo e(Auth::user()); ?></h1>
+                <?php endif; ?>
                 <p class="lead"><?php echo e(PageBuilder::block('lead_text')); ?></p>
             </div>
         </div>
@@ -19,9 +22,6 @@
         <?php endif; ?>
     </div>
 </section>
-
-
-
 <?php echo PageBuilder::section('footer'); ?>
 
 <?php /**PATH C:\laragon\www\proyectoweb22\resources\views/themes/temaGrupo3/templates/home.blade.php ENDPATH**/ ?>

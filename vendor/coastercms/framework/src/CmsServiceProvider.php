@@ -12,6 +12,8 @@ use CoasterCms\Http\Middleware\SecureUpload;
 use CoasterCms\Http\Middleware\UploadChecks;
 use CoasterCms\Libraries\Builder\FormMessage;
 use Illuminate\Auth\AuthManager;
+use Illuminate\Auth\EloquentUserProvider;
+use Illuminate\Auth\SessionGuard;
 use Illuminate\Foundation\Http\Kernel;
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
@@ -102,7 +104,12 @@ class CmsServiceProvider extends ServiceProvider
         $this->app['config']->set('auth.providers.coaster-user', ['driver' => 'coaster-provider', 'model' => \CoasterCms\Models\User::class]);
         $authManager->extend('coaster-guard', function ($app, $name, $config) {
             $provider = $app['auth']->createUserProvider($config['provider'] ?? null);
-            $guard = new CoasterGuard($name, $provider, $app['session.store']);
+            if(env('APP_COASTERPANEL')){
+                $guard = new CoasterGuard($name, $provider, $app['session.store']);
+            }else{
+                $guard = new SessionGuard($name, $provider, $app['session.store']);
+            }
+
             // replicate createSessionDriver in AuthManager
             if (method_exists($guard, 'setCookieJar')) {
                 $guard->setCookieJar($this->app['cookie']);
@@ -116,7 +123,11 @@ class CmsServiceProvider extends ServiceProvider
             return $guard;
         });
         $authManager->provider('coaster-provider', function ($app, $config) {
-            return new CoasterUserProvider($app['hash'], $config['model']);
+            if(env('APP_COASTERPANEL')){
+                return new CoasterUserProvider($app['hash'], $config['model']);
+            }else{
+                return new EloquentUserProvider($app['hash'], $config['model']);
+            }
         });
 
         // Overwrite Croppa Url

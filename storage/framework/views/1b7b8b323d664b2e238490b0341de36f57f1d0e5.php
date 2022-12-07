@@ -233,10 +233,10 @@ unset($__errorArgs, $__bag); ?>
             <div id="fButton">
                 <button type="submit" class="registerButton">Crear cuenta</button>
             </div>
-            <div>
-                <button class="register2Button">Iniciar Sesión</button>
-            </div>
         </form>
+        <div>
+            <button class="register2Button" onclick="location.href='<?php echo e(route('login')); ?>'">Iniciar Sesión</button>
+        </div>
     </section>
 </main>
 <?php echo PageBuilder::section('footer'); ?>

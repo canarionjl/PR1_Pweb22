@@ -21,7 +21,7 @@
 
 LOCK TABLES `usuarios` WRITE;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` VALUES (1,'Frutería Villa de Moya','fruteria@villademoya.es','fruteria','675432282','Vendedor','C/Miguel Hernandez, 3'),(2,'María García Rodríguez','maria@gmail.com','maria',NULL,'Cliente','El palmito, 22'),(3,'Francisco Rodríguez','francisco@gmail.com','francisco123','675456783','Productor',NULL),(4,'Antonia Suárez Medina','antonia@hotmail.es','antonia_2','687456321','Productor','C/Tomas Morales, 45'),(5,'Mercadillo Municipal','mercadillo@villademoya.es','MeRcADiLLo','632123457','Vendedor','Calle Principal Villa de Moya, 45'),(6,'Ernesto Benítez Jímenez','ernesto@gmail.com','ernes_123','678564345','Cliente','C/Almeida, Edificio 5, Piso 2');
+INSERT INTO `usuarios`(id, nombre, email, password, telefono, tipoUsuario, direccion) VALUES (1,'Frutería Villa de Moya','fruteria@villademoya.es','fruteria','675432282','Vendedor','C/Miguel Hernandez, 3'),(2,'María García Rodríguez','maria@gmail.com','maria',NULL,'Cliente','El palmito, 22'),(3,'Francisco Rodríguez','francisco@gmail.com','francisco123','675456783','Productor',NULL),(4,'Antonia Suárez Medina','antonia@hotmail.es','antonia_2','687456321','Productor','C/Tomas Morales, 45'),(5,'Mercadillo Municipal','mercadillo@villademoya.es','MeRcADiLLo','632123457','Vendedor','Calle Principal Villa de Moya, 45'),(6,'Ernesto Benítez Jímenez','ernesto@gmail.com','ernes_123','678564345','Cliente','C/Almeida, Edificio 5, Piso 2');
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
