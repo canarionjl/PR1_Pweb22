@@ -21,7 +21,7 @@
 
 LOCK TABLES `datos_sensores` WRITE;
 /*!40000 ALTER TABLE `datos_sensores` DISABLE KEYS */;
-INSERT INTO `datos_sensores` VALUES (1,'humedad_Casco',15.6,'2022-06-01 18:37:10'),(2,'humedad_Casco',17.9,'2022-06-02 18:37:37'),(3,'probLluvia_lomoBlanco',45,'2022-11-07 16:00:00'),(4,'probLluvia_Casco',47,'2022-11-07 16:00:00'),(5,'humedad_fontanales',75,'2022-08-19 12:49:38'),(6,'humedad_lomoblanco',64,'2022-08-30 18:48:13');
+INSERT INTO `datos_sensores` VALUES (1,2,15.6,'2022-06-01 18:37:10'),(2,2,17.9,'2022-06-02 18:37:37'),(3,1,45,'2022-11-07 16:00:00'),(4,1,47,'2022-11-07 16:00:00'),(5,2,75,'2022-08-19 12:49:38'),(6,2,64,'2022-08-30 18:48:13');
 /*!40000 ALTER TABLE `datos_sensores` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

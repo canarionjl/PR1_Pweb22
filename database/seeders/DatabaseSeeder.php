@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
         DB::table("productos") -> truncate();
         DB::table("tipo_productos") -> truncate();
         DB::table("usuarios") -> truncate();
+        DB::table("sensores") -> truncate();
 
         DB::statement('SET FOREIGN_KEY_CHECKS=1');
 
@@ -33,6 +34,7 @@ class DatabaseSeeder extends Seeder
            TipoProductoSeeder::class,
            UsuarioSeeder::class,
            DatosSensoresSeeder::class,
+           SensorSeeder::class
        ]);
     }
 }

@@ -3,6 +3,7 @@
 
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Sensors\SensorController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -62,6 +63,14 @@ Route::get('/',function(){
    return view('themes/temaGrupo3/templates/home');
 })->middleware('auth');
 
+Route::get('/practica3/sensores',function() {
+    return view ('themes/temaGrupo3/sensores');
+});
 
-Route::get('api/get/{startDate}/{endDate}','App\Http\Controllers\SensorController@index')->name('SensorController.index');
-Route::post('api/add','App\Http\Controllers\SensorController@store')->name('SensorController.store');
+
+Route::get('api/get/date/{startDate}/{endDate}', [SensorController::class,'index'])->name('SensorController.index');
+Route::post('api/add',[SensorController::class,'store'])->name('SensorController.store');
+
+Route::get('api/get/sensors',[SensorController::class,'getSensors'])->name('SensorController.getSensors');
+Route::get('api/get/sensorData/{sensor_id}',[SensorController::class,'getSensorData'])->name('SensorController.getSensorData');
+

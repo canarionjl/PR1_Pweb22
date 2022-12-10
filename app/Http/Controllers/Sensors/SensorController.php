@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Sensors;
 
 use App\Http\Controllers\Controller;
 use App\Models\DatosSensor;
+use App\Models\Sensor;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
@@ -32,12 +33,17 @@ class SensorController extends Controller
      */
     public function store(Request $request)
     {
-        $sensorData = array('sensor' => $request->get('sensor'),
-            'valor' => $request->get('valor'),
-            'fecha' => Carbon::createFromFormat('d/m/Y-H:i:s',$request->get('fecha')));
-        DatosSensor::create($sensorData);
-        return $sensorData;
+        $sensorData = $request->all();
+//        foreach ($sensorData as $i => $sensor){
+//            $sensorData[$i]['fecha'] = Carbon::createFromFormat('d/m/Y-H:i:s', $sensor['fecha']);
+//        }
+        if(DatosSensor::insert($sensorData)){
+            return "OK";
+        }else{
+            return "ERROR";
+        }
     }
+
 
     /**
      * Display the specified resource.
@@ -71,5 +77,18 @@ class SensorController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function getSensors(){
+        $sensors = Sensor::all();
+        return json_encode($sensors);
+    }
+
+    public function getSensorData($sensor_id){
+        $sensorData = DatosSensor::where('sensor_id',$sensor_id)->get();
+        for ($i = 0; $i < sizeof($sensorData); $i++) {
+            $sensorData[$i]['sensor_name'] = $sensorData[$i]->sensor->sensor_name;
+        }
+        return json_encode($sensorData);
     }
 }

@@ -20,7 +20,8 @@
         "fruitcake/laravel-cors": "^2.0",
         "laravel/tinker": "^2.5",
         "coastercms/framework": "~8.0",
-      "ext-http": "*"
+      "ext-http": "*",
+      "ext-json": "*"
     },
     "autoload": {
         "classmap": [
