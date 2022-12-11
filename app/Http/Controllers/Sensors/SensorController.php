@@ -15,13 +15,20 @@ class SensorController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($startDate, $endDate)
+    public function index($startDate, $endDate, $id = null)
     {
+
         $startDate = Carbon::createFromFormat('dmY', $startDate);
         $endDate = Carbon::createFromFormat('dmY', $endDate);
+        if($id==null){
+            return DatosSensor::whereBetween('fecha',[$startDate,$endDate])
+                ->get();
+        }else{
+            return DatosSensor::whereBetween('fecha',[$startDate,$endDate])
+                ->where('sensor_id','=',$id)
+                ->get();
+        }
 
-        return DatosSensor::whereBetween('fecha',[$startDate,$endDate])
-            ->get();
         // Example: http://proyectoweb22.test/api/get/01112022/01012023
     }
 
@@ -81,7 +88,7 @@ class SensorController extends Controller
 
     public function getSensors(){
         $sensors = Sensor::all();
-        return json_encode($sensors);
+        return $sensors;
     }
 
     public function getSensorData($sensor_id){
@@ -89,6 +96,6 @@ class SensorController extends Controller
         for ($i = 0; $i < sizeof($sensorData); $i++) {
             $sensorData[$i]['sensor_name'] = $sensorData[$i]->sensor->sensor_name;
         }
-        return json_encode($sensorData);
+        return $sensorData;
     }
 }

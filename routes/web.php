@@ -63,11 +63,16 @@ Route::get('/',function(){
    return view('themes/temaGrupo3/templates/home');
 })->middleware('auth');
 
-Route::get('/practica3/sensores',function() {
-    return view ('themes/temaGrupo3/sensores');
+Route::get('practica3/{type}', function($type){
+    switch ($type){
+        case 'basico'||'sensores'||'graficos':
+            return view("themes/temaGrupo3/practica3_$type");
+        default:
+            return response(view('themes/temaGrupo3/errors/404'), 404);
+    }
 });
 
-
+Route::get('api/get/date/{startDate}/{endDate}/{id}', [SensorController::class,'index'])->name('SensorController.index');
 Route::get('api/get/date/{startDate}/{endDate}', [SensorController::class,'index'])->name('SensorController.index');
 Route::post('api/add',[SensorController::class,'store'])->name('SensorController.store');
 

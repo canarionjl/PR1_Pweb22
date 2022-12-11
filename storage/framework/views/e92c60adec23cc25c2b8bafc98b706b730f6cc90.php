@@ -113,4 +113,4 @@
 
 <?php echo PageBuilder::section('footer'); ?>
 
-<?php /**PATH C:\laragon\www\proyectoweb22\resources\views/themes/temaGrupo3/sensores.blade.php ENDPATH**/ ?>
+<?php /**PATH C:\laragon\www\proyectoweb22\resources\views/themes/temaGrupo3/practica3_sensores.blade.php ENDPATH**/ ?>
