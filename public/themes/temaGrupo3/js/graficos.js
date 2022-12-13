@@ -4,17 +4,29 @@ var startDate = '01012022';
 var endDate = '01012024';
 var sensor_id = 2;
 var sensorId;
+var submitButton;
 var chart;
 var dateRange;
 var dataLabel;
 var unit;
 var startDateObject;
-var endDateObject
+var endDateObject;
+
+
+function enterEventListener(ev){
+    if(ev.key === 'Enter'){
+        submitButtonClicked();
+    }
+
+}
 
 function initComponents() {
     sensorId = document.getElementById('sensor_id');
+    sensorId.addEventListener('keypress',(ev)=>{enterEventListener(ev);});
     startDateId = document.getElementById('startDate');
+    startDateId.addEventListener('keypress',(ev)=>{enterEventListener(ev);});
     endDateId = document.getElementById('endDate');
+    endDateId.addEventListener('keypress',(ev)=>{enterEventListener(ev);});
 }
 
 function formatDate(date){
@@ -81,8 +93,8 @@ function createDataCollection(response){
     orderArrayByDate(dataCollection);
     dataCollection.forEach( obj => reformatObj( obj) );
     /* Update time Unit*/
-    dateRange = (new Date(Date.parse(dataCollection[0]['x'])) -
-        new Date(Date.parse(dataCollection[dataCollection.length-1]['x'])))/86400000;
+    dateRange = (new Date(Date.parse(dataCollection[dataCollection.length-1]['x'])) -
+        new Date(Date.parse(dataCollection[0]['x'])))/86400000;
     console.log(dateRange);
     unit = dateRange<60 ? 'day' : 'month';
 }

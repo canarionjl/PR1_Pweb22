@@ -14,3 +14,9 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+Route::get('get/date/{startDate}/{endDate}/{id}', [SensorController::class,'index'])->name('SensorController.index');
+Route::get('get/date/{startDate}/{endDate}', [SensorController::class,'index'])->name('SensorController.index');
+Route::post('add',[SensorController::class,'store'])->name('SensorController.store');
+
+Route::get('get/sensors',[SensorController::class,'getSensors'])->name('SensorController.getSensors');
+Route::get('get/sensorData/{sensor_id}',[SensorController::class,'getSensorData'])->name('SensorController.getSensorData');

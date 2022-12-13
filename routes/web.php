@@ -72,10 +72,9 @@ Route::get('practica3/{type}', function($type){
     }
 });
 
-Route::get('api/get/date/{startDate}/{endDate}/{id}', [SensorController::class,'index'])->name('SensorController.index');
-Route::get('api/get/date/{startDate}/{endDate}', [SensorController::class,'index'])->name('SensorController.index');
-Route::post('api/add',[SensorController::class,'store'])->name('SensorController.store');
-
-Route::get('api/get/sensors',[SensorController::class,'getSensors'])->name('SensorController.getSensors');
-Route::get('api/get/sensorData/{sensor_id}',[SensorController::class,'getSensorData'])->name('SensorController.getSensorData');
-
+Route::get('/portal', function(){
+    return view('themes/temaGrupo3/portal');
+})->middleware('auth');
+Route::get('/portal/gestor', function(){
+    return view('themes/temaGrupo3/portal_gestor');
+});

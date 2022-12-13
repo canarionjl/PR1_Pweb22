@@ -19,7 +19,9 @@ class SensorController extends Controller
     {
 
         $startDate = Carbon::createFromFormat('dmY', $startDate);
+        $startDate = Carbon::parse($startDate)->startOfDay()->toISOString();
         $endDate = Carbon::createFromFormat('dmY', $endDate);
+        $endDate = Carbon::parse($endDate)->endOfDay()->toISOString();
         if($id==null){
             return DatosSensor::whereBetween('fecha',[$startDate,$endDate])
                 ->get();
