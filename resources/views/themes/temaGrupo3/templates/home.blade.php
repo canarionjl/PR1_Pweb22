@@ -9,9 +9,12 @@
         <div class="row text-center">
             <div class="col-sm-10 col-sm-offset-1">
                 <h2>{{ PageBuilder::block('title') }}</h2>
-                @if($tipo == 'Vendedor' || $tipo == 'Productor')
+                @if(Auth::check() && ($tipo == 'Vendedor' || $tipo == 'Productor'))
                     <a href="/portal" type="button" id="portalButton" class="btn btn-default" id="scrollbutton">
                         Portal del {{ Auth::user()->tipoUsuario }}</a><br><br>
+                @elseif(Auth::guest())
+                    <a href="/register" type="button" id="registerButton" class="btn btn-default" id="scrollbutton">
+                       Registrarse</a><br><br>
                 @endif
                 <p class="lead">{{ PageBuilder::block('lead_text') }}</p>
             </div>
@@ -22,7 +25,5 @@
         @endif
     </div>
 </section>
-<script>
-    document.getElementById('portalButton').addEventListener('click', )
-</script>
+
 {!! PageBuilder::section('footer') !!}

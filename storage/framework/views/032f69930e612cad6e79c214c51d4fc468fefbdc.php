@@ -11,9 +11,12 @@
         <div class="row text-center">
             <div class="col-sm-10 col-sm-offset-1">
                 <h2><?php echo e(PageBuilder::block('title')); ?></h2>
-                <?php if($tipo == 'Vendedor' || $tipo == 'Productor'): ?>
+                <?php if(Auth::check() && ($tipo == 'Vendedor' || $tipo == 'Productor')): ?>
                     <a href="/portal" type="button" id="portalButton" class="btn btn-default" id="scrollbutton">
                         Portal del <?php echo e(Auth::user()->tipoUsuario); ?></a><br><br>
+                <?php elseif(Auth::guest()): ?>
+                    <a href="/register" type="button" id="registerButton" class="btn btn-default" id="scrollbutton">
+                       Registrarse</a><br><br>
                 <?php endif; ?>
                 <p class="lead"><?php echo e(PageBuilder::block('lead_text')); ?></p>
             </div>
@@ -25,9 +28,7 @@
         <?php endif; ?>
     </div>
 </section>
-<script>
-    document.getElementById('portalButton').addEventListener('click', )
-</script>
+
 <?php echo PageBuilder::section('footer'); ?>
 
 <?php /**PATH C:\laragon\www\proyectoweb22\resources\views/themes/temaGrupo3/templates/home.blade.php ENDPATH**/ ?>

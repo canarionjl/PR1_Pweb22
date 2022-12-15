@@ -61,7 +61,7 @@ Route::post('register', [RegisterController::class,'store']);
 
 Route::get('/',function(){
    return view('themes/temaGrupo3/templates/home');
-})->middleware('auth');
+});
 
 Route::get('practica3/{type}', function($type){
     switch ($type){

@@ -120,6 +120,9 @@ function showChart() {
         }]
     };
     const options = {
+        responsive: true,
+        aspectRatio: 0.9,
+        maintainAspectRatio: false,
         elements: {
           line:{
               tension: 0.3,
@@ -134,6 +137,9 @@ function showChart() {
                 time: {
                     unit: unit,
                 }
+            },
+            y:{
+                max:100
             }
         },
         animation: {
@@ -143,7 +149,8 @@ function showChart() {
             delay: (context) => {
                 let delay = 0;
                 if (context.type === 'data' && context.mode === 'default' && !delayed) {
-                    delay = context.dataIndex * 100 + context.datasetIndex * 100;
+                    //delay = context.dataIndex * 100 + context.datasetIndex * 100;
+                    delay= (context.dataIndex * 2000)/context.dataset.data.length;
                 }
                 return delay;
             },

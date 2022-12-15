@@ -6,6 +6,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="../themes/temaGrupo3/js/graficos.js"></script>
 <section class="mainSection">
+    <br><br><br><br>
     <div class="menu">
         <select name="sensor_id" id="sensor_id">
         </select>
@@ -55,11 +56,16 @@
         flex-flow: row wrap;
         justify-content: center;
         align-items: stretch;
-        column-gap: 30px
+        column-gap: 30px;
+    }
+    #myChart{
+
     }
     .chart{
         padding: 50px 50px 50px 50px;
-        width:60%;
+        width:80%;
+        max-width: 900px;
+        position: relative;
     }
 
 </style>
