@@ -3,6 +3,7 @@
 
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\Sensors\SensorController;
 use Illuminate\Support\Facades\Route;
 
@@ -61,7 +62,7 @@ Route::post('register', [RegisterController::class,'store']);
 
 Route::get('/',function(){
    return view('themes/temaGrupo3/templates/home');
-});
+})->name('home');
 
 Route::get('practica3/{type}', function($type){
     switch ($type){
@@ -74,7 +75,7 @@ Route::get('practica3/{type}', function($type){
 
 Route::get('/portal', function(){
     return view('themes/temaGrupo3/portal');
-})->middleware('auth');
-Route::get('/portal/gestor', function(){
-    return view('themes/temaGrupo3/portal_gestor');
-});
+})->middleware('tipoAuth:null,vendedor,productor');
+
+Route::resource('portal/gestor',ProductController::class)->middleware('tipoAuth:null,vendedor,productor');
+
