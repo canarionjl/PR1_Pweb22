@@ -1,1 +1,0 @@
-<img src="<?php echo $image->file; ?>" title="<?php echo $image->title; ?>" alt="<?php echo $image->title; ?>" <?php echo $image->extra_attrs; ?>><?php /**PATH C:\laragon\www\proyectoweb22\resources\views/themes/coaster2017/blocks/image/default.blade.php ENDPATH**/ ?>

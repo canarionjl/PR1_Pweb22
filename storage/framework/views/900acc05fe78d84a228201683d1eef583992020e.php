@@ -3,33 +3,37 @@
 
 <section>
 
-
-    <div class="" style=" display:flex; padding:50px; gap:100px; align-items: center">
-        <header class="">
-            <div class="">
-                <h2 class=""><?php echo e($product_type); ?></h2>
-                <div class=""><a href="#">Frutas y Hortalizas Ecológicas Rodríguez</a></div>
-                <div class="">Precio: 3€/kg (1 caja es igual a 10 kg)</div>
-                <div class="">Estas zanahorias han sido cultivadas de forma natural (sin productos insecticidas)
-                    en las tierras de Fontanales </div>
-            </div>
-            <div class="" style = "display:flex; gap:20px; align-items: baseline">
+    <div style="display:flex; padding:50px; gap:100px; align-items: center; justify-content: space-around">
+        <?php if($product): ?>
+            <header>
+                <div>
+                    <h2><?php echo e($product->product->titulo); ?></h2>
+                    <div style="color:#4BE117"><?php echo e($product->user->nombre); ?></div>
+                    <div>Precio: <strong><?php echo e($product->precio); ?> €/kg</strong>
+                    <?php if(strcmp($product->unidad,"gramos") === 1 and !(empty($product->unidad) === true or (strlen($product->unidad) === 0))): ?>
+                            (1 caja es igual a <?php echo e($product->equivalenciaGrUnidad); ?> gramos)
+                    <?php endif; ?>
+                    </div>
+                    <div>Cantidad disponible: <strong><?php echo e($product->cantidad); ?></strong></div>
+                </div>
+                <div style="display:flex; gap:20px; align-items: baseline">
                     Cantidad: <textarea rows="1" cols="5"></textarea>
                     <select name="Unidad">
-                        <option value="caja">Caja(s)</option>
-                        <option value="kilogramos">Kilogramos</option>
+                        <?php if(strcmp($product->unidad,"gramos") === 1 and !(empty($product->unidad) === true or (strlen($product->unidad) === 0))): ?>
+                            <option value="<?php echo e($product->unidad); ?>"><?php echo e($product->unidad); ?>(s)</option>
+                        <?php endif; ?>
+                        <option value="gramos">gramos</option>
                     </select>
-                <a class="btn gradient-bg" href="#">Comprar</a>
-            </div>
-        </header>
-
-        <figure class="">
-            <img src="/uploads/images.jpg">
+                    <a class="btn gradient-bg" href="#">AÑADIR AL CARRITO</a>
+                </div>
+            </header>
+        <?php endif; ?>
+        <figure>
+            <img src="<?php echo e($product->product->urlFoto); ?>" style="max-width: 300px; height:auto; border-radius: 10px" alt="No Image Found">
         </figure>
     </div>
 
 </section>
-
 
 
 <?php echo PageBuilder::section('footer'); ?>

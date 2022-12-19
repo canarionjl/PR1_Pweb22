@@ -2,33 +2,37 @@
 
 <section>
 
-
-    <div class="" style=" display:flex; padding:50px; gap:100px; align-items: center">
-        <header class="">
-            <div class="">
-                <h2 class="">{{$product_type}}</h2>
-                <div class=""><a href="#">Frutas y Hortalizas Ecológicas Rodríguez</a></div>
-                <div class="">Precio: 3€/kg (1 caja es igual a 10 kg)</div>
-                <div class="">Estas zanahorias han sido cultivadas de forma natural (sin productos insecticidas)
-                    en las tierras de Fontanales </div>
-            </div>
-            <div class="" style = "display:flex; gap:20px; align-items: baseline">
+    <div style="display:flex; padding:50px; gap:100px; align-items: center; justify-content: space-around">
+        @if($product)
+            <header>
+                <div>
+                    <h2>{{$product->product->titulo}}</h2>
+                    <div style="color:#4BE117">{{$product->user->nombre}}</div>
+                    <div>Precio: <strong>{{$product->precio}} €/kg</strong>
+                    @if(strcmp($product->unidad,"gramos") === 1 and !(empty($product->unidad) === true or (strlen($product->unidad) === 0)))
+                            (1 caja es igual a {{$product->equivalenciaGrUnidad}} gramos)
+                    @endif
+                    </div>
+                    <div>Cantidad disponible: <strong>{{$product->cantidad}}</strong></div>
+                </div>
+                <div style="display:flex; gap:20px; align-items: baseline">
                     Cantidad: <textarea rows="1" cols="5"></textarea>
                     <select name="Unidad">
-                        <option value="caja">Caja(s)</option>
-                        <option value="kilogramos">Kilogramos</option>
+                        @if(strcmp($product->unidad,"gramos") === 1 and !(empty($product->unidad) === true or (strlen($product->unidad) === 0)))
+                            <option value="{{$product->unidad}}">{{$product->unidad}}(s)</option>
+                        @endif
+                        <option value="gramos">gramos</option>
                     </select>
-                <a class="btn gradient-bg" href="#">Comprar</a>
-            </div>
-        </header>
-
-        <figure class="">
-            <img src="/uploads/images.jpg">
+                    <a class="btn gradient-bg" href="#">AÑADIR AL CARRITO</a>
+                </div>
+            </header>
+        @endif
+        <figure>
+            <img src="{{$product->product->urlFoto}}" style="max-width: 300px; height:auto; border-radius: 10px" alt="No Image Found">
         </figure>
     </div>
 
 </section>
-
 
 
 {!! PageBuilder::section('footer') !!}

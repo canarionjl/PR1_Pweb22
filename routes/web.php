@@ -4,7 +4,8 @@
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\ProductController;
-use App\Http\Controllers\Sensors\SensorController;
+use App\Http\Controllers\ProductDetailController;
+use App\Http\Controllers\ProductListController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -45,16 +46,10 @@ Route::get('paginaPersonal/{name_of_user?}', function($name_of_user = "Unknown")
     return view ('themes/temaGrupo3/paginaPersonal_grupo3',compact('name_of_user'));
 });
 
-Route::get('productos/{product_type}', function($product_type) {
-    return view ('themes/temaGrupo3/product_detail',compact('product_type'));
-});
-
-Route::get('productos/{product_type}', function($product_type) {
-    return view ('themes/temaGrupo3/product_detail',compact('product_type'));
-});
+Route::get('products', [ProductListController::class,'index']);
+Route::get('product/{id}', [ProductDetailController::class,'index']);
 
 Route::get('login', [LoginController::class,'index'])->name('login');
-
 Route::post('login',[LoginController::class,'store'])->name('SensorController.store');
 
 Route::get('register', [RegisterController::class,'index'])->name('register');
@@ -75,7 +70,7 @@ Route::get('practica3/{type}', function($type){
 
 Route::get('/portal', function(){
     return view('themes/temaGrupo3/portal');
-})->middleware('tipoAuth:null,vendedor,productor');
+})-> middleware('tipoAuth:null,vendedor,productor');
 
 Route::resource('portal/gestor',ProductController::class)->middleware('tipoAuth:null,vendedor,productor');
 

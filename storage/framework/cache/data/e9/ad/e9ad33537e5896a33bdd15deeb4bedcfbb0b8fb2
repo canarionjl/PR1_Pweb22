@@ -1,4 +1,4 @@
-1670764581s:6146:"<!DOCTYPE html>
+1671401313s:6085:"<!DOCTYPE html>
 <html lang="en">
 <head itemscope>
     <meta charset="utf-8">
@@ -54,9 +54,6 @@
             <ul class="nav navbar-nav navbar-right">
                 <li class="">
     <a href="/">Inicio</a>
-</li>
-    <li class="">
-    <a href="/products">Productos (Mercado Online)</a>
 </li>
     <li class=" active">
     <a href="/about">¿Quiénes somos?</a>

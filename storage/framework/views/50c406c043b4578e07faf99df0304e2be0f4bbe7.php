@@ -1,1 +1,0 @@
-<?php /**PATH C:\laragon\www\proyectoweb22\resources\views/themes/temaGrupo3/breadcrumbs/default/separator.blade.php ENDPATH**/ ?>
