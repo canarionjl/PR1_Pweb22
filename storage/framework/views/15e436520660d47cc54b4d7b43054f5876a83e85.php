@@ -5,7 +5,7 @@
      style="background: url(<?php echo e(PageBuilder::block('internal_banner', ['view' => 'raw'])); ?>) no-repeat center"></div>
 
 <section id="sec1">
-    
+
     <div class="" style="display:flex; flex-direction: row;
                 justify-content: space-evenly; flex-wrap: wrap; align-items: stretch; gap: 30px 30px">
 

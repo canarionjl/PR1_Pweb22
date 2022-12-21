@@ -10,6 +10,6 @@ class ShoppingCartController extends Controller
 
     public function index(){
         $products = ProductoUsuario::get();
-        return view('themes/temaGrupo3/shopping_cart') -> with ('products_cart',$products);
+        return view('webViews/e-commerce/shopping_cart') -> with ('products_cart',$products);
     }
 }
