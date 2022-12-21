@@ -17,7 +17,7 @@
                     <div>Cantidad disponible: <strong><?php echo e($product->cantidad); ?></strong></div>
                 </div>
                 <div style="display:flex; gap:20px; align-items: baseline">
-                    Cantidad: <textarea rows="1" cols="5"></textarea>
+                    Cantidad: <input name="quantity" id="quantity" type="number" step="0.1" style="width: 60px">
                     <select name="Unidad">
                         <?php if(strcmp($product->unidad,"gramos") === 1 and !(empty($product->unidad) === true or (strlen($product->unidad) === 0))): ?>
                             <option value="<?php echo e($product->unidad); ?>"><?php echo e($product->unidad); ?>(s)</option>
@@ -27,10 +27,11 @@
                     <a class="btn gradient-bg" href="#">AÑADIR AL CARRITO</a>
                 </div>
             </header>
-        <?php endif; ?>
+
         <figure>
             <img src="<?php echo e($product->product->urlFoto); ?>" style="max-width: 300px; height:auto; border-radius: 10px" alt="No Image Found">
         </figure>
+        <?php endif; ?>
     </div>
 
 </section>

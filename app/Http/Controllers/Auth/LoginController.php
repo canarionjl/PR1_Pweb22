@@ -12,7 +12,7 @@ class LoginController extends Controller
 {
     public function index()
     {
-        return view('themes/temaGrupo3/login');
+        return view('webViews/auth/login');
     }
     public function store(Request $request)
     {
@@ -25,7 +25,7 @@ class LoginController extends Controller
         if(Auth::attempt($credentials)){
             return redirect('/')->with('status','Iniciaste sesión con éxito');
         }
-        throw ValidationException::withMessages([   
+        throw ValidationException::withMessages([
             'password' => 'Contraseña incorrecta'
         ]);
     }

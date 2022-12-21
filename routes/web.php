@@ -3,9 +3,10 @@
 
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
-use App\Http\Controllers\ProductController;
-use App\Http\Controllers\ProductDetailController;
-use App\Http\Controllers\ProductListController;
+use App\Http\Controllers\ECommerce\ShoppingCartController;
+use App\Http\Controllers\Products\ProductController;
+use App\Http\Controllers\Products\ProductDetailController;
+use App\Http\Controllers\Products\ProductListController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -43,7 +44,7 @@ Route::get('/AlvaroPrivado', function() {
 });
 
 Route::get('paginaPersonal/{name_of_user?}', function($name_of_user = "Unknown") {
-    return view ('themes/temaGrupo3/paginaPersonal_grupo3',compact('name_of_user'));
+    return view ('webViews/developerTeam/paginaPersonal_grupo3',compact('name_of_user'));
 });
 
 Route::get('products', [ProductListController::class,'index']);
@@ -55,6 +56,8 @@ Route::post('login',[LoginController::class,'store'])->name('SensorController.st
 Route::get('register', [RegisterController::class,'index'])->name('register');
 Route::post('register', [RegisterController::class,'store']);
 
+Route:: get('shoppingCart',[ShoppingCartController::class,'index']);
+
 Route::get('/',function(){
    return view('themes/temaGrupo3/templates/home');
 })->name('home');
@@ -62,14 +65,14 @@ Route::get('/',function(){
 Route::get('practica3/{type}', function($type){
     switch ($type){
         case 'basico'||'sensores'||'graficos':
-            return view("themes/temaGrupo3/practica3_$type");
+            return view("webViews/sensors/practica3_$type");
         default:
             return response(view('themes/temaGrupo3/errors/404'), 404);
     }
 });
 
 Route::get('/portal', function(){
-    return view('themes/temaGrupo3/portal');
+    return view('webViews/portal/portal');
 })-> middleware('tipoAuth:null,vendedor,productor');
 
 Route::resource('portal/gestor',ProductController::class)->middleware('tipoAuth:null,vendedor,productor');

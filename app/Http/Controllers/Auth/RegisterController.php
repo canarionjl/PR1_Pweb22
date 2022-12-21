@@ -13,7 +13,7 @@ class RegisterController extends Controller
 {
     public function index()
     {
-        return view('themes/temaGrupo3/register');
+        return view('webViews/auth/register');
     }
 
     public function store(Request $request)
