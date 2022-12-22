@@ -23,8 +23,6 @@ class CreateProductosTable extends Migration
             $table -> foreign("tipoProducto_id") -> references('id') -> on("tipo_productos");
 
             $table -> string("urlFoto",1000) -> nullable() -> default(null);
-
-
         });
     }
 

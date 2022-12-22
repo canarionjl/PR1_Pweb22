@@ -92,7 +92,7 @@ Route::get('/portal', function(){
 Route::resource('portal/gestor',ProductController::class)->middleware('tipoAuth:null,vendedor,productor');
 
 // Payment
-Route::get('paypal/pay', [PaymentController::class, 'payWithPayPal']);
+Route::get('paypal/pay', [PaymentController::class, 'payWithPayPal'])->middleware('tipoAuth:cliente,vendedor,null');
 Route::get('paypal/status', [PaymentController::class, 'payPalStatus']);
 
 Route::get('resultsPay', function(){

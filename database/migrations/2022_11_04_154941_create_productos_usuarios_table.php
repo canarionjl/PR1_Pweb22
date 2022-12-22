@@ -26,7 +26,7 @@ class CreateProductosUsuariosTable extends Migration
             $table->integer("cantidad")->unsigned();
             $table -> float ("precio") -> unsigned();
             $table -> integer ("equivalenciaGrUnidad")-> unsigned() -> default(1);
-            $table -> enum("unidad",["manojo","racimo","gramo","puñado","caja","bandeja","unidad"]) -> default("gramos");
+            $table -> enum("unidad",["manojo","racimo","gramo","puñado","caja","bandeja","unidad"]) -> default("unidad");
 
 
         });
