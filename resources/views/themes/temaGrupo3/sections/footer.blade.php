@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-sm-12 text-center">
                 <button class="btn btn-default" id="scrollbutton2">{{ PageBuilder::block('scroll_to_top_text') }} &nbsp; <i class="fa fa-arrow-up"></i></button>
-                <p>&copy; {{ PageBuilder::block('copyright') }} {!! date("Y") !!}. Powered by <a href="http://www.coastercms.org">Coaster CMS</a>.</p>
+{{--                <p>&copy; {{ PageBuilder::block('copyright') }} {!! date("Y") !!}. Powered by <a href="http://www.coastercms.org">Coaster CMS</a>.</p>--}}
             </div>
         </div>
     </div>

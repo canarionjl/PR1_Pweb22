@@ -99,7 +99,7 @@ Route::post('processToPayPal',[ShoppingCartController::class,'processToPayPal'])
 Route::get('deleteProductFromCart/{id}',[ShoppingCartController::class, 'deleteProductFromCart']);
 
 //Payment
-Route::get('paypal/pay', [PaymentController::class, 'payWithPayPal'])->middleware('tipoAuth:cliente,vendedor,null');
+Route::get('paypal/pay', [PaymentController::class, 'payWithPayPal'])->middleware('tipoAuth:cliente,vendedor,null') -> name('paypal');
 Route::get('paypal/status', [PaymentController::class, 'payPalStatus']);
 
 Route::get('resultsPay', function(){

@@ -15,7 +15,6 @@
 <section>
     @if($product_cart)
         @php
-            $pago = 0.0;
             $index = 0;
         @endphp
         <form name="payment" method="POST" action="{{route('processToPayPal')}}">
@@ -27,14 +26,16 @@
 
                         <div class="final_element"><h2>{{$product[0]->product->titulo}}</h2></div>
 
-                        <div class="final_element" style="color:#090000">Precio: <strong>{{$product[0]->precio}}
+                        <div class="final_element" style="color:#090000">Precio:
+                            <strong>{{$product[0]->precio}}
                                 €/kg </strong>
+                            <input value="{{$product[0]->precio}}" type="hidden" id="price_{{$index}}">
                         </div>
 
-                        <div class="final_element" style="flex-direction: column">
-                            Cantidad: <input name="quantity_{{$product[0]->id}}" id="quantity" type="number" step="1"
+                        <div class="final_element">
+                            Cantidad: <input id="{{$index}}" name="quantity_{{$product[0]->id}}" type="number" step="1"
                                              style="width: 80px"
-                                             value="{{$product[1]}}">
+                                             value="{{$product[1]}}" onchange="calculatePrice()">
                         </div>
 
                         <div class="final_element">
@@ -57,7 +58,6 @@
                     </div>
                     <div>
                         @php
-                            $pago += floatval($product[0]->precio);
                             $message_identifier = 'quantity_'.($product[0]->id);
                         @endphp
                         @error ($message_identifier)
@@ -67,22 +67,53 @@
                         @enderror
                     </div>
                 </div>
-            @endforeach
 
+            @endforeach
 
             <div
                 style="display:flex; padding:20px; align-items: baseline; justify-content: space-between; background: rgba(139,252,147,0.78); margin: 20px;">
 
                 <h2>TOTAL: </h2>
 
-                <h4 style="font-size: 30px"><strong> {{$pago}} € </strong></h4>
+                <h4 id="price" style="font-size: 30px">0</h4>
 
                 <input class="btn gradient-bg" type="submit" value="PAGAR Y FINALIZAR COMPRA">
 
             </div>
-
         </form>
+
+        <script>
+            const index = parseInt({{$index}});
+        </script>
+    @else
+        <div
+            style="display:flex; padding:20px; align-items: center; justify-content: space-between; background: rgba(139,252,147,0.78); margin: 20px;">
+
+            <div><h2>NO HAY ELEMENTOS EN EL CARRITO</h2></div>
+
+            <div><a href="/products" type="button" class="btn gradient-bg">
+                    VOLVER AL MERCADO</a>
+            </div>
+        </div>
     @endif
 </section>
+
+<script>
+    window.onload = init
+
+    function init() {
+        calculatePrice();
+    }
+
+    function calculatePrice() {
+        let total = 0;
+        for (let i = 0; i < index; i++) {
+            let id = 'price_' + i;
+            total += parseFloat(document.getElementById(i.toString()).value) * parseFloat(document.getElementById(id).value);
+            console.log(total);
+        }
+        document.getElementById('price').textContent = total.toFixed(2) + '€';
+    }
+</script>
 
 {!! PageBuilder::section('footer') !!}

@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-sm-12 text-center">
                 <button class="btn btn-default" id="scrollbutton2"><?php echo e(PageBuilder::block('scroll_to_top_text')); ?> &nbsp; <i class="fa fa-arrow-up"></i></button>
-                <p>&copy; <?php echo e(PageBuilder::block('copyright')); ?> <?php echo date("Y"); ?>. Powered by <a href="http://www.coastercms.org">Coaster CMS</a>.</p>
+
             </div>
         </div>
     </div>
