@@ -33,7 +33,7 @@
         <div class="row">
             <div class="col-sm-12" >
                  <br>
-                <p class="errorpage_1">Uy, Error: «<?php echo $error; ?>» [404]</p>
+                <p class="errorpage_1">Uy, Error: «<?php echo e(isset($error) ? $error : ""); ?>» [404]</p>
                 <p class="errorpage_2">La página solicitada no existe o no está disponible en estos momentos</p>
             </div>
         </div>

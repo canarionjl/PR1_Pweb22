@@ -16,12 +16,13 @@
     ],
     "require": {
         "php": "^7.3|^8.0",
+        "ext-json": "*",
+        "ext-http": "*",
+        "coastercms/framework": "~8.0",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "laravel/tinker": "^2.5",
-        "coastercms/framework": "~8.0",
-      "ext-http": "*",
-      "ext-json": "*"
+        "paypal/rest-api-sdk-php": "*"
     },
     "autoload": {
         "classmap": [

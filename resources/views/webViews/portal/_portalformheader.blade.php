@@ -40,12 +40,11 @@
     }
 
     button {
-        width: 100%;
         overflow: hidden;
         border: none;
 
         border-radius: 3px;
-        height: 40px;
+
         text-align: center;
         background-color: transparent;
         border: 1px solid transparent;
@@ -54,6 +53,8 @@
     }
 
     .deleteButton {
+        width: 100%;
+        height: 40px;
         color: #ff0000;
         border-color: #ff0000;
     }
@@ -65,6 +66,8 @@
     }
 
     .editButton {
+        width: 100%;
+        height: 40px;
         color: #000000;
         border-color: #000000;
     }
@@ -114,7 +117,8 @@
         }
 
         .nombreElement {
-            flex: 1;
+            flex: 0.4;
+            height: 35px;
             margin: 10px 10px 10px 0;
         }
         h1{
@@ -122,5 +126,5 @@
         }
     </style>
     {{--  CREADOR/EDITOR DE PRODUCTOS  --}}
-    <h1>{{$btnText}} producto</h1>
+    <h1>{{$headerText}} producto</h1>
     <div class="createProduct">
