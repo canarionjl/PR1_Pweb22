@@ -21,6 +21,7 @@
                     @if($tipo == 'Vendedor')
                         <a href="/shoppingCart" type="button" id="vendedorShoppingCartButton" class="btn btn-default" id="scrollbutton">
                             VER MI CARRITO</a><br><br>
+                    @endif
                 @elseif(Auth::check() && ($tipo == 'Cliente'))
                     <h2>¡Bienvenid@, {{$nombre}} </h2>
                     <p class="lead">¡Le deseamos un muy buen viaje a través de nuestro portal!</p>

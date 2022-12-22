@@ -56,7 +56,7 @@ Route::post('login',[LoginController::class,'store'])->name('SensorController.st
 Route::get('register', [RegisterController::class,'index'])->name('register');
 Route::post('register', [RegisterController::class,'store']);
 
-Route:: get('shoppingCart',[ShoppingCartController::class,'index']);
+Route:: get('shoppingCart',[ShoppingCartController::class,'index']) -> name('shoppingCart');
 
 Route::get('/',function(){
    return view('themes/temaGrupo3/templates/home');
@@ -76,4 +76,10 @@ Route::get('/portal', function(){
 })-> middleware('tipoAuth:null,vendedor,productor');
 
 Route::resource('portal/gestor',ProductController::class)->middleware('tipoAuth:null,vendedor,productor');
+
+Route::post('addProductToCart',[ProductDetailController::class,'addProductToCart']) -> name('addProductToCart');
+
+Route::post('processToPayPal',[ShoppingCartController::class,'processToPayPal']) -> name('processToPayPal');
+
+Route::get('deleteProductFromCart/{id}',[ShoppingCartController::class, 'deleteProductFromCart']);
 

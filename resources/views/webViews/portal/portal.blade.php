@@ -39,7 +39,7 @@
 <h1>Portal de {{ $tipo }}</h1>
     </div>
 <div class="contenedor">
-    <a href="/portal/gestor" type="button" class="button button1" type="button">
+    <a href="/portal/gestor" type="button" class="button button1">
         Portal Gestor
     </a>
     <a href="/products" type="button" class="button button2" type="button">
