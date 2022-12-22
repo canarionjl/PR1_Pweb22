@@ -18,13 +18,19 @@
                     <a href="/portal" type="button" id="portalButton" class="btn btn-default" id="scrollbutton">
                         Portal del {{ Auth::user()->tipoUsuario }}</a><br><br>
                     <p class="lead">Administre todos los productos que tiene a la venta</p>
+                @if($tipo == 'Vendedor')
+                        <a href="/shoppingCart" type="button" id="vendedorShoppingCartButton" class="btn btn-default" id="scrollbutton">
+                            VER MI CARRITO</a><br><br>
+                @endif
                 @elseif(Auth::check() && ($tipo == 'Cliente'))
                     <h2>¡Bienvenid@, {{$nombre}} </h2>
                     <p class="lead">¡Le deseamos un muy buen viaje a través de nuestro portal!</p>
+                    <a href="/shoppingCart" type="button" id="clienteShoppingCartButton" class="btn btn-default" id="scrollbutton">
+                        VER MI CARRITO</a><br><br>
                 @elseif(Auth::guest())
                     <h2>¡Regístrate y sé parte de nuestra maravillosa comunidad!</h2>
                     <a href="/register" type="button" id="registerButton" class="btn btn-default" id="scrollbutton">
-                       Registrarse</a><br><br>
+                       REGISTRARSE</a><br><br>
                     <p class="lead">Los mejores productos de la villa de Moya están esperando por usted</p>
                 @endif
 
@@ -38,3 +44,4 @@
 </section>
 
 {!! PageBuilder::section('footer') !!}
+

@@ -8,8 +8,10 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="logo" href="/">
-                <?php echo PageBuilder::block('logo', ['height' => '60px']); ?>
 
+                <img src="/uploads/logo.png"
+                     style="width: auto; height:65px; padding: 5px"
+                     alt="No Image Found">
             </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">

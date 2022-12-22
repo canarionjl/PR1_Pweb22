@@ -1,4 +1,4 @@
-1671667989s:6911:"<!DOCTYPE html>
+1671714481s:6952:"<!DOCTYPE html>
 <html lang="en">
 <head itemscope>
     <meta charset="utf-8">
@@ -47,7 +47,10 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="logo" href="/">
-                <img src="/cache/uploads/images/coaster2017/logo-_x60.png?token=7bd2b4fd696614b0578cd97cce104750" title="logo" alt="logo" >
+
+                <img src="/uploads/logo.png"
+                     style="width: auto; height:65px; padding: 5px"
+                     alt="No Image Found">
             </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">

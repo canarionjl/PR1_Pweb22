@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\ECommerce;
 
 use App\Http\Controllers\Controller;
-use App\Models\ProductoUsuario;
+use App\Models\ProductoPedido;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
 use PayPal\Api\Amount;
@@ -41,7 +41,7 @@ class PaymentController extends Controller
         $items = [];
         $items[0]=[1,2];
         $items[1]=[2,4];
-        $total = 0;
+
         foreach($items as $addon){
             $product = ProductoUsuario::find($addon[0]);
             $ppItem = new Item();
@@ -51,14 +51,14 @@ class PaymentController extends Controller
                 ->setCurrency('EUR')
                 ->setPrice($product->precio);
             $allItems[] = $ppItem;
-            $total += $product->precio * $addon[1];
         }
         $itemList = new ItemList();
         $itemList->setItems($allItems);
 
 
+
         $amount = new Amount();
-        $amount->setTotal($total );
+        $amount->setTotal($itemList->getTotalPrice());
         $amount->setCurrency('EUR');
 
         $transaction = new Transaction();
@@ -106,10 +106,29 @@ class PaymentController extends Controller
 
         /** Execute the payment **/
         $result = $payment->execute($execution, $this->apiContext);
-        dd($result);
         if($result->getState() === 'approved') {
             $status = 'Gracias! El pago a través de PayPal se ha realizado correctamente.';
+            // TODO: Añadir en la base de datos (Producto_Pedido y pedido) y reducir cantidad
+
+            foreach($result->transactions[0]->item_list->items as $item){
+
+                ProductoPedido::create([
+                    'usuario_id' => Auth::user()->id,
+                    'productoUsuario_id' => $request->get('cantidad'),
+                    'precio' => $request->get('precio'),
+                    'equivalenciaGrUnidad' => $request->get('equivalenciaGrUnidad'),
+                    'unidad' => $request->get('unidad'),
+                ]);
+
+                    $pu = new ProductoUsuario();
+                $pu->usuario_id =
+            }
+
             return redirect('resultsPay')->with(compact('status'));
+
+
+
+
         }
 
         $status = 'No se pudo proceder con el pago a través de Paypal.';
