@@ -42,8 +42,8 @@
     <a href="/portal/gestor" type="button" class="button button1">
         Portal Gestor
     </a>
-    <a href="/products" type="button" class="button button2" type="button">
-        Ver productos como un {{ (($tipo=='Vendedor') ? 'Consumidor': ($tipo=='Productor' ? 'Vendedor' : ''))}}
+    <a href="/practica3/graficos" type="button" class="button button2" type="button">
+        Ver sensores
     </a>
     <br>
 </div>

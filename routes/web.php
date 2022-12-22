@@ -3,10 +3,12 @@
 
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\ECommerce\PaymentController;
 use App\Http\Controllers\ECommerce\ShoppingCartController;
 use App\Http\Controllers\Products\ProductController;
 use App\Http\Controllers\Products\ProductDetailController;
 use App\Http\Controllers\Products\ProductListController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -51,28 +53,41 @@ Route::get('products', [ProductListController::class,'index']);
 Route::get('product/{id}', [ProductDetailController::class,'index']);
 
 Route::get('login', [LoginController::class,'index'])->name('login');
-Route::post('login',[LoginController::class,'store'])->name('SensorController.store');
+Route::post('login',[LoginController::class,'store'])->name('LoginController.store');
 
 Route::get('register', [RegisterController::class,'index'])->name('register');
 Route::post('register', [RegisterController::class,'store']);
 
+
 Route:: get('shoppingCart',[ShoppingCartController::class,'index']) -> name('shoppingCart');
+
+Route::get('logout', function(){
+        Auth::logout();
+        return redirect(route('home'));
+});
+
 
 Route::get('/',function(){
    return view('themes/temaGrupo3/templates/home');
 })->name('home');
 
 Route::get('practica3/{type}', function($type){
-    switch ($type){
-        case 'basico'||'sensores'||'graficos':
-            return view("webViews/sensors/practica3_$type");
-        default:
-            return response(view('themes/temaGrupo3/errors/404'), 404);
+    if ($type==='basico' || $type==='sensores' || $type==='graficos') {
+
+    return view("webViews/sensors/practica3_$type");
     }
+        else {
+    return response(view('themes/temaGrupo3/errors/404'), 404);
+        }
 });
 
 Route::get('/portal', function(){
-    return view('webViews/portal/portal');
+    if(Auth::user()->tipoUsuario === 'Productor'){
+        return view('webViews/portal/portal');
+    }else{
+        return redirect('portal/gestor');
+    }
+
 })-> middleware('tipoAuth:null,vendedor,productor');
 
 Route::resource('portal/gestor',ProductController::class)->middleware('tipoAuth:null,vendedor,productor');
@@ -82,4 +97,12 @@ Route::post('addProductToCart',[ProductDetailController::class,'addProductToCart
 Route::post('processToPayPal',[ShoppingCartController::class,'processToPayPal']) -> name('processToPayPal');
 
 Route::get('deleteProductFromCart/{id}',[ShoppingCartController::class, 'deleteProductFromCart']);
+
+//Payment
+Route::get('paypal/pay', [PaymentController::class, 'payWithPayPal'])->middleware('tipoAuth:cliente,vendedor,null');
+Route::get('paypal/status', [PaymentController::class, 'payPalStatus']);
+
+Route::get('resultsPay', function(){
+    return view('webViews.e-commerce.results');
+});
 

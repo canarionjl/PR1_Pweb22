@@ -10,5 +10,6 @@ class ProductoPedido extends Model
 {
     use HasFactory;
     protected $table = 'productos_pedidos';
+    protected $guarded  =[];
     public $timestamps = false;
 }

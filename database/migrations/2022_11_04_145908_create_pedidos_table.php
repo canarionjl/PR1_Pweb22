@@ -20,12 +20,12 @@ class CreatePedidosTable extends Migration
             $table -> integer("comprador_id") -> unsigned();
             $table -> foreign("comprador_id") -> references("id") -> on("usuarios");
 
-            $table -> integer("vendedor_id") -> unsigned();
-            $table -> foreign("vendedor_id") -> references("id") -> on("usuarios");
-
             $table-> dateTime("fecha",6);
             $table -> float("importe") -> unsigned();
 
+            $table -> string('paymentId',255)->nullable()->unique();
+            $table -> string('token',255)->nullable();
+            $table -> string('payerId',255)->nullable();
 
         });
     }

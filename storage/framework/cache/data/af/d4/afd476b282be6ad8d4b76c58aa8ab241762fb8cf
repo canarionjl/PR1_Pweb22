@@ -1,10 +1,15 @@
+<<<<<<< HEAD
 1671652730s:7616:"<!DOCTYPE html>
+=======
+1671714481s:6952:"<!DOCTYPE html>
+>>>>>>> db100a18f3022c815880fefd4456e620d46aa7e6
 <html lang="en">
 <head itemscope>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<<<<<<< HEAD
     <title>Meet the Team | Coaster CMS</title>
     <meta name="description" content="Meet the Team">
     <meta name="keywords" content="">
@@ -13,6 +18,16 @@
     <meta property="og:description" content="Meet the Team">
     <meta itemprop="name" content="Meet the Team | Coaster CMS">
     <meta itemprop="description" content="Meet the Team">
+=======
+    <title>Conoce a los desarolladores | Coaster CMS</title>
+    <meta name="description" content="Conoce a los desarolladores">
+    <meta name="keywords" content="">
+
+    <meta property="og:title" content="Conoce a los desarolladores | Coaster CMS">
+    <meta property="og:description" content="Conoce a los desarolladores">
+    <meta itemprop="name" content="Conoce a los desarolladores | Coaster CMS">
+    <meta itemprop="description" content="Conoce a los desarolladores">
+>>>>>>> db100a18f3022c815880fefd4456e620d46aa7e6
 
     <meta name="revisit-after" content="7 days">
 
@@ -93,6 +108,12 @@
     <li class="">
     <a href="/login">Iniciar Sesión</a>
 </li>
+<<<<<<< HEAD
+=======
+    <li class="">
+    <a href="/logout">Logout</a>
+</li>
+>>>>>>> db100a18f3022c815880fefd4456e620d46aa7e6
 
     </ul>
 </li>
@@ -115,7 +136,11 @@
     <div class="col-sm-12">
         <ul class="breadcrumb">
             <li><a href="http://proyectoweb22.test">Home</a></li>
+<<<<<<< HEAD
 <li class="active">Meet the Team</li>
+=======
+<li class="active">Conoce a los desarolladores</li>
+>>>>>>> db100a18f3022c815880fefd4456e620d46aa7e6
 
         </ul>
     </div>
@@ -123,15 +148,22 @@
 
         <div class="row">
             <div class="col-sm-12">
+<<<<<<< HEAD
                 <h1>Meet the Team</h1>
                 <p class="lead">Nemo enim ipsam voluptatem quia voluptas sit aspernatur</p>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+=======
+                <h1>Conoce a los desarrolladores</h1>
+                <p class="lead">Esta página web ha sido creada en su totalidad por el equipo de entusiastas que se muestra a continuación.</p>
+                
+>>>>>>> db100a18f3022c815880fefd4456e620d46aa7e6
             </div>
         </div>
 
         <div class="row text-center meetrow">
 
         <div class="col-sm-4">
+<<<<<<< HEAD
             <img src="http://proyectoweb22.test/uploads/images/coaster2017/team.jpg" title="team" alt="team" class="img-responsive img-inline" >
             <h3>Johanne Smith Again (Accountant)</h3>
             <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</p>
@@ -156,6 +188,17 @@
             <img src="http://proyectoweb22.test/uploads/images/coaster2017/team.jpg" title="team" alt="team" class="img-responsive img-inline" >
             <h3>Johanne Smith (Team Leader)</h3>
             <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</p>
+=======
+            <img src="http://proyectoweb22.test/uploads/himar.jpg" title="himar" alt="himar" class="img-responsive img-inline" >
+            <h3>Himar Moreno Santana (Full Stack Developer)</h3>
+            <p></p>
+        </div>
+
+<div class="col-sm-4">
+            <img src="http://proyectoweb22.test/uploads/joseluis.jpg" title="joseluis" alt="joseluis" class="img-responsive img-inline" >
+            <h3>Jose Luis Benítez Santana (Full Stack Developer)</h3>
+            <p></p>
+>>>>>>> db100a18f3022c815880fefd4456e620d46aa7e6
         </div>
 
     </div>
@@ -187,7 +230,11 @@
 
         $('#blogSearch').submit(function(event) {
             event.preventDefault();
+<<<<<<< HEAD
             window.location.href = '/'+$('#query').val();
+=======
+            window.location.href = '/meet-the-team/'+$('#query').val();
+>>>>>>> db100a18f3022c815880fefd4456e620d46aa7e6
         });
 
         $("#scrollbutton").click(function() {

@@ -1,12 +1,12 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => 'v8.0.0',
-    'version' => '8.0.0.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => '381f4e284ab059cd1bfafb029ab86ebbbd3656c2',
     'name' => 'coastercms/coastercms',
   ),
   'versions' => 
@@ -49,12 +49,12 @@
     ),
     'coastercms/coastercms' => 
     array (
-      'pretty_version' => 'v8.0.0',
-      'version' => '8.0.0.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '381f4e284ab059cd1bfafb029ab86ebbbd3656c2',
     ),
     'coastercms/framework' => 
     array (
@@ -557,6 +557,15 @@
       ),
       'reference' => '3d81e4309d2a927abbe66df935f4bb60082805ad',
     ),
+    'paypal/rest-api-sdk-php' => 
+    array (
+      'pretty_version' => '1.14.0',
+      'version' => '1.14.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '72e2f2466975bf128a31e02b15110180f059fc04',
+    ),
     'phpoption/phpoption' => 
     array (
       'pretty_version' => '1.9.0',
@@ -668,8 +677,8 @@
     array (
       'provided' => 
       array (
-        0 => '1.0|2.0',
-        1 => '1.0.0 || 2.0.0 || 3.0.0',
+        0 => '1.0.0 || 2.0.0 || 3.0.0',
+        1 => '1.0|2.0',
       ),
     ),
     'psr/simple-cache' => 

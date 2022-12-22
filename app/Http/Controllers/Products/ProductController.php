@@ -37,12 +37,8 @@ class ProductController extends Controller
     public function store(Request $request)
     {
 
-        $producto_id = Producto::create([
-            'titulo' => $request->get('titulo'),
-            'tipoProducto_id' => $request->get('tipoProducto_id'),
-        ])->id;
         ProductoUsuario::create([
-            'producto_id' => $producto_id,
+            'producto_id' => $request->get('producto_id'),
             'usuario_id' => Auth::user()->id,
             'cantidad' => $request->get('cantidad'),
             'precio' => $request->get('precio'),
@@ -71,7 +67,7 @@ class ProductController extends Controller
     public function edit($id)
     {
         $producto = productoUsuario::find($id);
-        return view('themes/temaGrupo3/portal_gestor_editar', [
+        return view('webViews.portal.portal_gestor_editar', [
             'productos' => ProductoUsuario::where('usuario_id',Auth::user()->id)->get(),
             'productoEditar' => $producto,
         ]);
@@ -85,11 +81,8 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-         Producto::find(ProductoUsuario::find($id)->producto_id)->update([
-            'titulo' => $request->get('titulo'),
-            'tipoProducto_id' => $request->get('tipoProducto_id'),
-        ]);
         ProductoUsuario::find($id)->update([
+            'producto_id' => $request->get('producto_id'),
             'cantidad' => $request->get('cantidad'),
             'precio' => $request->get('precio'),
             'equivalenciaGrUnidad' => $request->get('equivalenciaGrUnidad'),
@@ -105,15 +98,6 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        $producto_id = ProductoUsuario::find($id)->producto_id;
-
         ProductoUsuario::find($id)->delete();
-        try{
-            Producto::find($producto_id)->delete();
-        }catch(Exception $e){
-
-        }
-
-        return "OK";
     }
 }
