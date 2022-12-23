@@ -99,10 +99,22 @@ Route::post('processToPayPal',[ShoppingCartController::class,'processToPayPal'])
 Route::get('deleteProductFromCart/{id}',[ShoppingCartController::class, 'deleteProductFromCart']);
 
 //Payment
-Route::get('paypal/pay', [PaymentController::class, 'payWithPayPal'])->middleware('tipoAuth:cliente,vendedor,null');
+Route::get('paypal/pay', [PaymentController::class, 'payWithPayPal'])->middleware('tipoAuth:cliente,vendedor,null')->name('paypal.pay');
 Route::get('paypal/status', [PaymentController::class, 'payPalStatus']);
 
 Route::get('resultsPay', function(){
     return view('webViews.e-commerce.results');
 });
+
+// Parte legal
+Route::get('aviso-legal', function(){
+    return view('webViews.legal.aviso_legal');
+});
+Route::get('proteccion-datos', function(){
+    return view('webViews.legal.proteccion_datos');
+});
+Route::get('condiciones-generales', function(){
+    return view('webViews.legal.condiciones_generales');
+});
+
 

@@ -37,6 +37,7 @@ class ShoppingCartController extends Controller
                 'quantity_' . $product[0] => ['required', 'numeric', 'integer', $rule]
             ]);
         }
+        return redirect(route('paypal.pay'));
     }
 
     public function deleteProductFromCart($id){

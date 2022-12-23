@@ -41,12 +41,9 @@ class PaymentController extends Controller
         $payer = new Payer();
         $payer->setPaymentMethod('paypal');
 
-        $allItems = [];
-        $items = [];
-        $items[0]=[1,2];
-        $items[1]=[2,4];
+        $products = session()->get('shoppingCart');
 
-        foreach($items as $addon){
+        foreach($products as $addon){
             $product = ProductoUsuario::find($addon[0]);
             $ppItem = new Item();
             $ppItem->setName($addon[0])
@@ -135,10 +132,10 @@ class PaymentController extends Controller
                     $productoUsuario->update([
                         'cantidad' => ($productoUsuario->cantidad - $item->quantity)
                     ]);
-                    $status = 'Gracias! El pago a través de PayPal se ha realizado correctamente.';
-                    return redirect('resultsPay')->with(compact('status'));
                 }
-            }catch(Exception $ex){
+                $status = 'Gracias! El pago a través de PayPal se ha realizado correctamente.';
+                return redirect('resultsPay')->with(compact('status'));
+                }catch(Exception $ex){
                 switch(substr($ex,23,5)){
                     case('23000'):
                         $status = 'No se pudo proceder con el pago a través de Paypal,

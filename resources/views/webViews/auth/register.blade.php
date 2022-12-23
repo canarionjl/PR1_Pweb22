@@ -156,7 +156,7 @@
     </section>
     <section class="sSection">
         <h1>Crear cuenta</h1>
-        <form action="register" method="POST">
+        <form id="registrar" action="register" method="POST">
             @csrf
             <h3 class="inputIntro">Nombre de usuario:</h3>
             <div>
@@ -201,6 +201,15 @@
                 <label for="type3">Productor</label>
                 {{--        </div>--}}
             </div>
+            <div>
+            <span>
+                <input name="policy" id="policy" style="width:20px;" type="checkbox" form="registrar" value="on"></span>
+            <span style="position:relative; bottom:14px; left:8px;">He leído y acepto la <a href="/proteccion-datos">política de privacidad</a></span>
+                @error ('policy')
+                <h6 style="color:red">{{$message}}</h6>
+                @enderror
+            </div>
+
             <div id="fButton">
                 <button type="submit" class="registerButton">Crear cuenta</button>
             </div>

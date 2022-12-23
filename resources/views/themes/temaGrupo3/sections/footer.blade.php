@@ -2,7 +2,9 @@
 
 <footer>
     <div style="position: relative;" class="container">
-        <a style="background-color: rgba(255,255,255,0.2); padding:7px; border-radius: 15px; position: absolute; bottom:0; z-index: 1;" href="https://www.coastercms.org/privacy-policy">Política de privacidad</a>
+        <a style="background-color: rgba(255,255,255,0); color:white; padding:7px; border-radius: 15px; position: absolute; bottom:0; z-index: 1;" href="https://www.coastercms.org/privacy-policy">Política de privacidad</a>
+        <a style="background-color: rgba(255,255,255,0); color:white; padding:7px; border-radius: 15px; position: absolute; bottom:0; left: 170px; z-index: 1;" href="/aviso-legal">Aviso legal</a>
+        <a style="background-color: rgba(255,255,255,0); color:white; padding:7px; border-radius: 15px; position: absolute; bottom:0; left: 270px; z-index: 1;" href="/condiciones-generales">Condiciones</a>
         <div class="row">
             <div class="col-sm-12 text-center">
                 <button class="btn btn-default" id="scrollbutton2">{{ PageBuilder::block('scroll_to_top_text') }} &nbsp; <i class="fa fa-arrow-up"></i></button>
