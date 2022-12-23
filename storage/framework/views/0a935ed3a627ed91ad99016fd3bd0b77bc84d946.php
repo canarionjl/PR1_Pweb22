@@ -35,7 +35,7 @@
                         </div>
 
                         <div class="final_element">
-                            Cantidad: <input id="<?php echo e($index); ?>" name="quantity_<?php echo e($product[0]->id); ?>" type="number" step="1"
+                            Cantidad: <input id="<?php echo e($index); ?>" name="quantity_<?php echo e($product[0]->id); ?>" type="number" min="0" step="1"
                                              style="width: 80px"
                                              value="<?php echo e($product[1]); ?>" onchange="calculatePrice()">
                         </div>

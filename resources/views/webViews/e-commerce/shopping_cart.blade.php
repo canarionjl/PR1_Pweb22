@@ -33,7 +33,7 @@
                         </div>
 
                         <div class="final_element">
-                            Cantidad: <input id="{{$index}}" name="quantity_{{$product[0]->id}}" type="number" step="1"
+                            Cantidad: <input id="{{$index}}" name="quantity_{{$product[0]->id}}" type="number" min="0" step="1"
                                              style="width: 80px"
                                              value="{{$product[1]}}" onchange="calculatePrice()">
                         </div>

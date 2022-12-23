@@ -157,7 +157,7 @@
     </section>
     <section class="sSection">
         <h1>Crear cuenta</h1>
-        <form action="register" method="POST">
+        <form id="registrar" action="register" method="POST">
             <?php echo csrf_field(); ?>
             <h3 class="inputIntro">Nombre de usuario:</h3>
             <div>
@@ -230,6 +230,22 @@ unset($__errorArgs, $__bag); ?>
                 <label for="type3">Productor</label>
                 
             </div>
+            <div>
+            <span>
+                <input name="policy" id="policy" style="width:20px;" type="checkbox" form="registrar" value="on"></span>
+            <span style="position:relative; bottom:14px; left:8px;">He leído y acepto la <a href="/proteccion-datos">política de privacidad</a></span>
+                <?php $__errorArgs = ['policy'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                <h6 style="color:red"><?php echo e($message); ?></h6>
+                <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+            </div>
+
             <div id="fButton">
                 <button type="submit" class="registerButton">Crear cuenta</button>
             </div>
