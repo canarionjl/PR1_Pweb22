@@ -46,6 +46,5 @@ class ShoppingCartController extends Controller
         $currentCart = array_values($currentCart);
         session()->put('shoppingCart', $currentCart);
         return redirect(route('shoppingCart'));
-
     }
 }
