@@ -18,29 +18,33 @@
                 <?php if(Auth::check() && ($tipo == 'Vendedor' || $tipo == 'Productor')): ?>
                     <h2>¡Bienvenid@, <?php echo e($nombre); ?>!</h2>
                     <a href="/portal" type="button" id="portalButton" class="btn btn-default" id="scrollbutton">
-                        Portal del <?php echo e(Auth::user()->tipoUsuario); ?></a><br><br>
-                    <p class="lead">Administre todos los productos que tiene a la venta</p>
-                <?php if($tipo == 'Vendedor'): ?>
-                        <a href="/shoppingCart" type="button" id="vendedorShoppingCartButton" class="btn btn-default" id="scrollbutton">
-                            VER MI CARRITO</a><br><br>
-                <?php endif; ?>
+                        Portal del <?php echo e(Auth::user()->tipoUsuario); ?></a>
+                    <a href="/socialMuro" type="button" id="socialMuroButton" class="btn btn-default">
+                        IR AL FORO <?php echo e(strtoupper(Auth::user()->tipoUsuario)); ?></a>
+                    <?php if($tipo == 'Vendedor'): ?>
+                        <a href="/shoppingCart" type="button" id="vendedorShoppingCartButton" class="btn btn-default">
+                            VER MI CARRITO</a>
+                    <?php endif; ?>
                 <?php elseif(Auth::check() && ($tipo == 'Cliente')): ?>
                     <h2>¡Bienvenid@, <?php echo e($nombre); ?> </h2>
                     <p class="lead">¡Le deseamos un muy buen viaje a través de nuestro portal!</p>
-                    <a href="/shoppingCart" type="button" id="clienteShoppingCartButton" class="btn btn-default" id="scrollbutton">
-                        VER MI CARRITO</a><br><br>
+                    <a href="/shoppingCart" type="button" id="clienteShoppingCartButton" class="btn btn-default">
+                        VER MI CARRITO</a>
+                    <a href="/socialMuro" type="button" id="socialMuroButton" class="btn btn-default">
+                        IR AL FORO <?php echo e(strtoupper(Auth::user()->tipoUsuario)); ?></a>
+
                 <?php elseif(Auth::guest()): ?>
                     <h2>¡Regístrate y sé parte de nuestra maravillosa comunidad!</h2>
-                    <a href="/register" type="button" id="registerButton" class="btn btn-default" id="scrollbutton">
-                       REGISTRARSE</a><br><br>
+                    <a href="/register" type="button" id="registerButton" class="btn btn-default">
+                        REGISTRARSE</a><br><br>
                     <p class="lead">Los mejores productos de la villa de Moya están esperando por usted</p>
                 <?php endif; ?>
 
             </div>
         </div>
-        <hr />
+        <hr/>
         <?php if($pageId = PageBuilder::block_selectpage('show_sub_pages')): ?>
-        <?php echo PageBuilder::category(['page_id' => $pageId, 'view' => 'home', 'limit' => 4]); ?>
+            <?php echo PageBuilder::category(['page_id' => $pageId, 'view' => 'home', 'limit' => 4]); ?>
 
         <?php endif; ?>
     </div>

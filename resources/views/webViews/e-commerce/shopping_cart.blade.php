@@ -87,13 +87,12 @@
         </script>
     @else
         <div
-            style="display:flex; padding:20px; align-items: center; justify-content: space-between; background: rgba(139,252,147,0.78); margin: 20px;">
+            style="display:flex; padding:20px; align-items: baseline; justify-content: space-between; background: rgba(139,252,147,0.78); margin: 20px;">
 
-            <div><h2>NO HAY ELEMENTOS EN EL CARRITO</h2></div>
+            <h4>NO HAY ELEMENTOS EN EL CARRITO</h4>
 
-            <div><a href="/products" type="button" class="btn gradient-bg">
+            <a href="/products" type="button" class="btn gradient-bg">
                     VOLVER AL MERCADO</a>
-            </div>
         </div>
     @endif
 </section>
